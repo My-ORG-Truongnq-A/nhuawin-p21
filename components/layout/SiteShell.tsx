@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { fontSans, fontSpec } from "@/app/fonts";
+import { Analytics } from "@/components/analytics/Analytics";
 import { FloatingContact } from "@/components/contact/FloatingContact";
 import { RevealObserver } from "@/components/motion/RevealObserver";
 import { DESIGN_VARIANT } from "@/content/features";
@@ -35,6 +36,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <Footer />
         <FloatingContact />
         <RevealObserver />
+        <Analytics />
       </body>
     </html>
   );
