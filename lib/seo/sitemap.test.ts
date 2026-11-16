@@ -38,9 +38,9 @@ describe("sitemap (T2.4, REQ-22, SEO-06)", () => {
 
   it("pageEntries: chỉ route đang bật và không noindex", () => {
     const entries = pageEntries([
-      { path: "/", enabled: true },
-      { path: "/san-pham", enabled: false },
-      { path: "/tim-kiem", enabled: true, noindex: true },
+      { path: "/", title: "Trang chủ", enabled: true },
+      { path: "/san-pham", title: "Sản phẩm", enabled: false },
+      { path: "/tim-kiem", title: "Tìm kiếm", enabled: true, noindex: true },
     ]);
     expect(entries.map((e) => e.path)).toEqual(["/"]);
   });
