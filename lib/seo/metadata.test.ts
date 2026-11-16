@@ -9,6 +9,16 @@ const ctx: MetaContext = {
   defaultOgImage: { url: "/images/brand/win-social-v2.png", width: 1200, height: 630, alt: "OG" },
 };
 
+describe("canonical trang lọc", () => {
+  it("keepQuery giữ query đã chuẩn hoá; mặc định bỏ query", () => {
+    const ctx = { brandName: "WIN", siteUrl: "https://a.vn", indexable: true };
+    expect(buildMetadata({ path: "/tin-tuc?chu-de=tin-win&trang=2", keepQuery: true }, ctx).alternates?.canonical).toBe(
+      "https://a.vn/tin-tuc?chu-de=tin-win&trang=2",
+    );
+    expect(buildMetadata({ path: "/bao-gia?loai=fomex-3-ly" }, ctx).alternates?.canonical).toBe("https://a.vn/bao-gia");
+  });
+});
+
 describe("formatTitle", () => {
   it.each([
     [undefined, "Nhựa WIN Việt Nam"],
@@ -16,6 +26,16 @@ describe("formatTitle", () => {
     ["Nhựa WIN Việt Nam — Nhà sản xuất", "Nhựa WIN Việt Nam — Nhà sản xuất"],
   ])("%s → %s", (title, expected) => {
     expect(formatTitle(title, ctx.brandName)).toBe(expected);
+  });
+});
+
+describe("canonical trang lọc", () => {
+  it("keepQuery giữ query đã chuẩn hoá; mặc định bỏ query", () => {
+    const ctx = { brandName: "WIN", siteUrl: "https://a.vn", indexable: true };
+    expect(buildMetadata({ path: "/tin-tuc?chu-de=tin-win&trang=2", keepQuery: true }, ctx).alternates?.canonical).toBe(
+      "https://a.vn/tin-tuc?chu-de=tin-win&trang=2",
+    );
+    expect(buildMetadata({ path: "/bao-gia?loai=fomex-3-ly" }, ctx).alternates?.canonical).toBe("https://a.vn/bao-gia");
   });
 });
 
@@ -58,6 +78,16 @@ describe("buildMetadata (T2.1, REQ-13)", () => {
     expect(buildMetadata({ path: "/san-pham", title: "Sản phẩm" }, ctx).title).toEqual({
       absolute: "Sản phẩm | Nhựa WIN Việt Nam",
     });
+  });
+});
+
+describe("canonical trang lọc", () => {
+  it("keepQuery giữ query đã chuẩn hoá; mặc định bỏ query", () => {
+    const ctx = { brandName: "WIN", siteUrl: "https://a.vn", indexable: true };
+    expect(buildMetadata({ path: "/tin-tuc?chu-de=tin-win&trang=2", keepQuery: true }, ctx).alternates?.canonical).toBe(
+      "https://a.vn/tin-tuc?chu-de=tin-win&trang=2",
+    );
+    expect(buildMetadata({ path: "/bao-gia?loai=fomex-3-ly" }, ctx).alternates?.canonical).toBe("https://a.vn/bao-gia");
   });
 });
 

@@ -9,8 +9,10 @@ import { OG_LOCALE } from "@/lib/i18n";
 import { absoluteUrl } from "@/lib/site-url";
 
 export type MetaInput = {
-  /** Path canonical; query bị bỏ (vd /bao-gia?loai=… → /bao-gia). */
+  /** Path canonical; query bị bỏ (vd /bao-gia?loai=… → /bao-gia) trừ khi keepQuery. */
   path: string;
+  /** Giữ query đã chuẩn hoá (trang lọc /tin-tuc?chu-de=…&trang=… tự trỏ canonical — seo_plan). */
+  keepQuery?: boolean;
   title?: string;
   description?: string;
   image?: ImageRef;
@@ -34,7 +36,7 @@ export function formatTitle(title: string | undefined, brandName: string): strin
 }
 
 export function buildMetadata(input: MetaInput, ctx: MetaContext): Metadata {
-  const path = input.path.split("?")[0] || "/";
+  const path = input.keepQuery ? input.path : input.path.split("?")[0] || "/";
   const canonical = absoluteUrl(path, ctx.siteUrl);
   const title = formatTitle(input.title, ctx.brandName);
   const image = input.image ?? ctx.defaultOgImage;
