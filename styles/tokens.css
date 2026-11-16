@@ -1,0 +1,138 @@
+/*
+ * NGUỒN TOKEN DUY NHẤT (GD-02) — giá trị theo .digiauto/inputs/design_tokens.json (DRAFT_FOR_G2, 14/11/2026).
+ * Đổi palette: chỉ đổi GIÁ TRỊ, giữ nguyên TÊN biến. Component chỉ dùng token, không hex rải rác.
+ * Bảng màu / font còn chờ khách xác nhận (MI-06); phương án PA1 / PA2 chờ G2 (MI-23).
+ *
+ * Mục tiêu tương phản (TC-04, WCAG 2.2 AA ≥ 4.5:1 cho chữ thường):
+ *   ink-900 trên trắng 14.16 · ink-500 trên trắng 6.92 (trên surface-2 6.38) · ink-400 trên trắng 5.12
+ *   brand-800 trên trắng 9.88 · chữ trắng trên brand-600 7.95 · chữ trắng trên hot 5.64
+ *   cyan-200 trên ink-900 10.05 · cyan-400 trên ink-950 6.6 · chữ ink-900 trên cyan-400 5.71
+ *   KHÔNG: cyan-400 làm chữ trên nền trắng (2.48) · chữ trắng trên accent (cyan-400).
+ */
+
+@theme {
+  /* Xoá palette / thang chữ mặc định của Tailwind: chỉ dùng token dưới đây. */
+  --color-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --font-*: initial;
+
+  /* --- Màu: tên vai trò (GD-02) --- */
+  --color-brand: #0b4da8; /* nút chính, link, số nhấn — chữ trắng trên nền này 7.95 */
+  --color-brand-ink: #02408e; /* chữ brand trên nền trắng 9.88 */
+  --color-accent: #00b0f0; /* cyan logo: trang trí / nền tối. KHÔNG làm chữ trên trắng */
+  --color-ink: #0b2a57; /* tiêu đề 14.16 */
+  --color-body: #2b3d57; /* chữ thân */
+  --color-muted: #4a5b73; /* chữ phụ 6.92 */
+  --color-subtle: #5e6f87; /* meta, chú thích 5.12 */
+  --color-surface: #ffffff;
+  --color-surface-2: #f3f6fa;
+  --color-surface-3: #e8eef6;
+  --color-line: #d6dfeb;
+  --color-line-strong: #b9c7db;
+  --color-danger: #b42318;
+  --color-success: #1b7f4b;
+
+  /* --- Màu: bảng đầy đủ theo design_tokens --- */
+  --color-brand-100: #e8f0fb;
+  --color-brand-600: #0b4da8;
+  --color-brand-700: #083f8c; /* hover nút chính */
+  --color-brand-800: #02408e;
+  --color-ink-400: #5e6f87;
+  --color-ink-500: #4a5b73;
+  --color-ink-700: #2b3d57;
+  --color-ink-900: #0b2a57;
+  --color-ink-950: #0a1f40; /* nền tối sâu: footer, khối Hợp tác */
+  --color-cyan-200: #9fe3ff; /* chữ nhấn trên nền tối */
+  --color-cyan-400: #00b0f0;
+  --color-hot: #c42b26; /* hotline, nút Gọi — chữ trắng 5.64 */
+  --color-zalo: #0068ff;
+  --color-facebook: #1877f2;
+  --color-focus: #00b0f0;
+
+  /* --- Chữ: 8 bậc, clamp() cho bậc lớn (thân 17 px; tiêu đề line-height ≥ 1.12 cho dấu chồng) --- */
+  --font-sans: var(--font-be-vietnam), "Segoe UI", Roboto, Arial, sans-serif;
+  --font-spec: var(--font-barlow), "Arial Narrow", Arial, sans-serif;
+  --font-display: var(--font-sans);
+
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.55;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.65;
+  --text-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem);
+  --text-lg--line-height: 1.55;
+  --text-xl: clamp(1.25rem, 1.12rem + 0.55vw, 1.625rem);
+  --text-xl--line-height: 1.4;
+  --text-2xl: clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
+  --text-2xl--line-height: 1.3;
+  --text-3xl: clamp(1.875rem, 1.4rem + 2vw, 3.25rem);
+  --text-3xl--line-height: 1.2;
+  --text-4xl: clamp(2.125rem, 1.45rem + 3.2vw, 4.5rem);
+  --text-4xl--line-height: 1.12;
+
+  --tracking-label: 0.08em; /* nhãn viết hoa: cỡ xs, đậm 700 */
+
+  /* --- Hình khối --- */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+  --radius-card: 14px; /* PA1; PA2 = 2px (lớp phương án bên dưới) */
+
+  --shadow-xs: 0 1px 2px rgb(11 42 87 / 0.08);
+  --shadow-sm: 0 2px 6px rgb(11 42 87 / 0.08), 0 1px 2px rgb(11 42 87 / 0.06);
+  --shadow-md: 0 10px 24px -8px rgb(11 42 87 / 0.18);
+  --shadow-lg: 0 24px 48px -16px rgb(11 42 87 / 0.28);
+  --shadow-focus: 0 0 0 3px rgb(0 176 240 / 0.55);
+
+  /* --- Bố cục --- */
+  --container-site: 76rem;
+  --container-prose: 42rem;
+  --spacing-header: var(--header-h);
+  --spacing-gutter: var(--gutter);
+  --spacing-section: var(--section-y);
+  --spacing-logo-header: var(--logo-header-h);
+
+  /* --- Chuyển động (subtle) --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --header-h: 4.5rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+  --section-y: clamp(3.5rem, 2.4rem + 4.5vw, 7.5rem);
+  --logo-header-h: 44px;
+  --logo-footer-w: min(360px, 86vw);
+
+  --motion-fast: 160ms;
+  --motion-base: 320ms;
+  --motion-slow: 700ms;
+  --reveal-distance: 16px;
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --logo-header-h: 56px;
+  }
+}
+
+/* Reduced motion: mọi duration = 0, reveal-distance = 0, tắt animation ảnh hero (GD-04). */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+    --motion-slow: 0ms;
+    --reveal-distance: 0px;
+  }
+}
+
+/* Lớp phương án (G2 chưa chốt — MI-23). Đổi bằng data-variant trên <html>. */
+[data-variant="pa2"] {
+  --radius-card: 2px;
+  --font-display: var(--font-spec);
+}

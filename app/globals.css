@@ -1,0 +1,72 @@
+/* Giới hạn quét class: không quét Studio / node_modules (GD-02). */
+@import "tailwindcss" source(none);
+@source "../app";
+@source "../components";
+@import "../styles/tokens.css";
+
+@layer base {
+  html {
+    /* Anchor không bị header dính che (GD-03, T1.6). */
+    scroll-padding-top: calc(var(--header-h) + 0.5rem);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background: var(--color-surface);
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    text-wrap: balance;
+    line-height: 1.2;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  [id] {
+    scroll-margin-top: calc(var(--header-h) + 0.5rem);
+  }
+
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+    border-radius: var(--radius-sm);
+  }
+
+  ::selection {
+    background: var(--color-brand-100);
+    color: var(--color-ink);
+  }
+}
+
+/* Reveal (GD-04, HN-06): chỉ opacity/transform, treo vào html.js; KHÔNG gắn cho phần tử LCP. */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity var(--motion-base) var(--ease-out),
+    transform var(--motion-base) var(--ease-out);
+}
+
+html.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
