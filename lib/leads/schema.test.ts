@@ -46,4 +46,22 @@ describe("parseLead (T5.1, REQ-04)", () => {
   it("honeypot có giá trị → spam, không kiểm tiếp", () => {
     expect(parseLead("contact", fd({ website: "x" }), OPTS)).toEqual({ ok: false, errors: {}, spam: true });
   });
+
+  const valid = { name: "An", phone: "0900000001", role: "Khác", need: "Báo giá" };
+  it.each([
+    ["0.5", true],
+    ["1.99", true],
+    ["2", false],
+    ["40", false],
+    ["", false], // không có JS → không đo được, không coi là bot
+    ["abc", false],
+  ])("thời gian điền $elapsed=%s → spam=%s (LD-04: ≥ 2 s)", (elapsed, spam) => {
+    expect(parseLead("contact", fd({ ...valid, $elapsed: elapsed }), OPTS).spam).toBe(spam);
+  });
+
+  it("điền nhanh nhưng sai → vẫn trả lỗi theo trường (không nuốt im lặng)", () => {
+    const r = parseLead("contact", fd({ ...valid, phone: "123", $elapsed: "0.5" }), OPTS);
+    expect(r.spam).toBe(false);
+    expect(!r.ok && r.errors).toHaveProperty("phone");
+  });
 });

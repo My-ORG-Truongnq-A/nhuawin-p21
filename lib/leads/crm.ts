@@ -1,31 +1,52 @@
 import "server-only";
-import type { LeadKind } from "./schema";
+import { attributionContext } from "./attribution";
+import type { Delivery, Env, Lead } from "./lead";
 
 /**
- * Adapter digiagent_crm (LEAD_DESTINATION). ⚠ Endpoint chưa kiểm trên tài khoản thật (MI-18):
- * POST JSON tới DGA_API_URL kèm khoá form DGA_FORM_KEY. Chưa cấu hình → không gửi, trả lỗi để form
- * hiện số hotline (không báo thành công giả). Không ghi log nội dung lead.
+ * Đích `digiagent_crm` (mặc định, LD-02): server-to-server
+ * `POST {DGA_API_URL}/api/v1/public/forms/{DGA_FORM_KEY}/submit`.
+ * ⚠ Endpoint chưa kiểm trên tài khoản thật (MI-18). Domain site phải nằm trong `allowed_domains`
+ * của form CRM, nếu không CRM vẫn trả "thành công" nhưng không tạo lead (G6 cần người xác nhận).
+ *
+ * Chưa cấu hình → trả lỗi (form hiện hotline), KHÔNG báo thành công giả. Log chỉ ghi kind + requestId.
  */
-export type CrmLead = { kind: LeadKind; fields: Record<string, string>; page: string };
 
-export async function sendToCrm(lead: CrmLead, env: Record<string, string | undefined> = process.env): Promise<{ ok: boolean; reason?: string }> {
-  const url = env.DGA_API_URL?.trim();
+const RESERVED = ["name", "phone", "email"] as const;
+
+export function crmPayload(lead: Lead) {
+  const custom: Record<string, string> = { form_type: lead.kind };
+  for (const [k, v] of Object.entries(lead.fields)) if (!(RESERVED as readonly string[]).includes(k)) custom[k] = v;
+  const reserved = Object.fromEntries(RESERVED.filter((k) => lead.fields[k]).map((k) => [k, lead.fields[k]]));
+  return {
+    ...reserved,
+    custom_fields: custom,
+    context: { page_url: lead.pageUrl, ...attributionContext(lead.attribution) },
+    request_id: lead.requestId,
+  };
+}
+
+export async function sendToCrm(lead: Lead, env: Env, fetchImpl: typeof fetch = fetch): Promise<Delivery> {
+  const base = env.DGA_API_URL?.trim().replace(/\/+$/, "");
   const key = env.DGA_FORM_KEY?.trim();
-  if (!url || !key) {
-    console.warn("[leads] Chưa cấu hình DGA_API_URL / DGA_FORM_KEY — lead không được gửi.");
+  if (!base || !key) {
+    console.warn(`[leads] Chưa cấu hình DGA_API_URL / DGA_FORM_KEY — lead ${lead.requestId} (${lead.kind}) không được gửi.`);
     return { ok: false, reason: "not_configured" };
   }
   try {
-    const res = await fetch(url, {
+    const res = await fetchImpl(`${base}/api/v1/public/forms/${encodeURIComponent(key)}/submit`, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Form-Key": key },
-      body: JSON.stringify({ form: lead.kind, fields: lead.fields, source: { page: lead.page } }),
+      headers: { "Content-Type": "application/json", "Idempotency-Key": lead.requestId },
+      body: JSON.stringify(crmPayload(lead)),
+      cache: "no-store",
       signal: AbortSignal.timeout(8000),
     });
-    if (!res.ok) console.warn(`[leads] CRM trả ${res.status}.`);
-    return res.ok ? { ok: true } : { ok: false, reason: `http_${res.status}` };
+    if (!res.ok) {
+      console.warn(`[leads] CRM trả ${res.status} cho lead ${lead.requestId} (${lead.kind}).`);
+      return { ok: false, reason: `http_${res.status}` };
+    }
+    return { ok: true };
   } catch {
-    console.warn("[leads] Không gọi được CRM.");
+    console.warn(`[leads] Không gọi được CRM cho lead ${lead.requestId} (${lead.kind}).`);
     return { ok: false, reason: "network" };
   }
 }

@@ -82,7 +82,20 @@ export type ParseResult =
   | { ok: false; errors: FieldErrors; spam: false }
   | { ok: false; errors: FieldErrors; spam: true };
 
-/** Đọc FormData: honeypot `website` có giá trị → spam (trả như thành công, không gửi CRM). */
+/** Thời gian điền tối thiểu (giây) — người thật không điền xong form dưới 2 s (LD-04). */
+export const MIN_FILL_SECONDS = 2;
+
+/** `$elapsed` do client đo từ lúc form mount; trống (không JS) → không xét. */
+function tooFast(form: FormData): boolean {
+  const raw = String(form.get("$elapsed") ?? "").trim();
+  const s = raw === "" ? NaN : Number(raw);
+  return Number.isFinite(s) && s < MIN_FILL_SECONDS;
+}
+
+/**
+ * Đọc FormData. Bot (honeypot `website` có giá trị / dữ liệu hợp lệ nhưng điền dưới 2 s) → spam:
+ * trả như thành công, không giao lead, không đếm chuyển đổi.
+ */
 export function parseLead(kind: LeadKind, form: FormData, o: LeadOptions): ParseResult {
   if (String(form.get("website") ?? "").trim() !== "") return { ok: false, errors: {}, spam: true };
   const raw = Object.fromEntries(
@@ -90,6 +103,8 @@ export function parseLead(kind: LeadKind, form: FormData, o: LeadOptions): Parse
   ) as Record<string, string>;
   const r = leadSchema(kind, o).safeParse(raw);
   if (r.success) {
+    // Kiểm thời gian sau khi dữ liệu hợp lệ: người điền nhanh mà sai vẫn thấy lỗi để sửa.
+    if (tooFast(form)) return { ok: false, errors: {}, spam: true };
     const data = Object.fromEntries(Object.entries(r.data).filter(([, v]) => v !== undefined && v !== "")) as Record<string, string>;
     return { ok: true, data, spam: false };
   }
