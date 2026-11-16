@@ -14,3 +14,8 @@ export function toE164(number: string): string | undefined {
   else return undefined;
   return /^\d{9,13}$/.test(digits) ? `+${digits}` : undefined;
 }
+
+/** Địa chỉ một dòng: ưu tiên `display` trong CMS, thiếu thì ghép đường + tỉnh / thành. */
+export function addressLine(a: { display?: string; street?: string; locality?: string } | undefined): string {
+  return a?.display ?? [a?.street, a?.locality].filter(Boolean).join(", ");
+}

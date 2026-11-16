@@ -31,6 +31,7 @@ export const SEED: ContentMap = {
       alt: "Nhựa WIN Việt Nam — Nhà sản xuất tấm Fomex",
     },
     address: {
+      display: "Cụm công nghiệp Quất Động, xã Thượng Phúc, Hà Nội",
       street: "Cụm công nghiệp Quất Động, xã Thượng Phúc",
       locality: "Hà Nội",
       region: "Hà Nội",
@@ -38,7 +39,11 @@ export const SEED: ContentMap = {
       mapUrl: "https://maps.app.goo.gl/7VgHcAP3EXp4rP7T6",
       geo: { lat: 20.841295, lng: 105.8699602 },
     },
-    phones: [{ number: "0824 862 689" }, { number: "0979 072 186" }],
+    // OQ-CM-07: tạm đặt 0824 862 689 là số chính (trùng số Zalo).
+    phones: [
+      { number: "0824 862 689", e164: "+84824862689" },
+      { number: "0979 072 186", e164: "+84979072186" },
+    ],
     email: "nhuawinvietnam@gmail.com",
     zalo: { url: "https://zalo.me/0824862689", label: "Nhắn Zalo" },
     socials: [
@@ -58,6 +63,7 @@ export const SEED: ContentMap = {
       },
       { label: "Chủ nhật", days: ["Sunday"], opens: "09:00", closes: "17:00" },
     ],
+    floatingContact: { enabled: true, showCall: true, showZalo: true, showFacebook: true },
     areaServed: "Việt Nam",
   },
 
@@ -113,7 +119,9 @@ export const SEED: ContentMap = {
         ],
       },
     ],
-    // privacyLink: chỉ thêm khi /chinh-sach-bao-mat đã publish (REQ-21, MI-15).
+    showContact: true,
+    // Chính sách bảo mật: chỉ thêm khi /chinh-sach-bao-mat đã publish (REQ-21, MI-15).
+    legalLinks: [],
   },
 
   homePage: {
@@ -142,6 +150,76 @@ export const SEED: ContentMap = {
     ],
   },
 
-  // 6 bài cũ nhập ở T3.4 / T4.7 (cần bản crawl đầy đủ); chưa có dữ liệu thì để trống, không bịa.
-  posts: [],
+  // 6 bài cũ (legacy_url_map.json: slug, tiêu đề, ngày). Chủ đề, tóm tắt, ảnh, nội dung nhập ở T3.4 từ bản crawl — không bịa.
+  posts: [
+    { slug: "cach-chon-do-day-tam-fomex", title: "Cách chọn độ dày tấm Fomex cho từng hạng mục", publishedAt: "2026-09-22", noindex: false },
+    { slug: "in-uv-va-dan-decal-len-tam-fomex", title: "Kinh nghiệm in UV và dán decal lên tấm Fomex", publishedAt: "2026-09-15", noindex: false },
+    { slug: "nhap-fomex-so-luong-lon-cho-dai-ly", title: "Kinh nghiệm nhập Fomex số lượng lớn cho đại lý vật liệu", publishedAt: "2026-09-08", noindex: false },
+    { slug: "tam-fomex-la-gi", title: "Tấm Fomex là gì? Cấu tạo, đặc tính và ứng dụng", publishedAt: "2026-08-25", noindex: false },
+    { slug: "cach-cat-va-gia-cong-tam-fomex", title: "Cắt và gia công tấm Fomex gọn mép, không vỡ cạnh", publishedAt: "2026-08-11", noindex: false },
+    { slug: "dung-tam-fomex-ngoai-troi", title: "Dùng tấm Fomex ngoài trời: chọn tấm, lắp đặt và bảo quản", publishedAt: "2026-07-28", noindex: false },
+  ],
+
+  // brief.json offerings.products. Bảng quy cách (specs) chờ chốt cột OQ-CM-01; ảnh chờ quyền dùng MI-10.
+  productGroups: [
+    {
+      slug: "fomex-3-ly",
+      title: "Fomex 3 ly",
+      order: 1,
+      nominalLabel: "3 ly",
+      actualRangeMm: { min: 2.4, max: 2.7 },
+      sheetsPerBundle: "15 tấm/kẹp",
+      description: "Nhẹ, dễ cắt — decor sinh nhật, tiệc cưới, background, biển bảng, chân quảng cáo, cắt dán decal.",
+      specs: [],
+    },
+    {
+      slug: "fomex-5-ly",
+      title: "Fomex 5 ly",
+      order: 2,
+      nominalLabel: "5 ly",
+      actualRangeMm: { min: 3.8, max: 4.7 },
+      sheetsPerBundle: "10–12 tấm/kẹp",
+      description: "Cứng hơn, giữ phẳng tốt — decor trang trí.",
+      specs: [],
+    },
+    {
+      slug: "fomex-8-10-ly",
+      title: "Fomex 8–10 ly",
+      order: 3,
+      nominalLabel: "8–10 ly",
+      actualRangeMm: { min: 7, max: 9.5 },
+      sheetsPerBundle: "5 tấm/kẹp",
+      description: "Chịu lực tốt — hashtag, bảng check-in cầm tay, nội thất.",
+      specs: [],
+    },
+    {
+      slug: "fomex-15-18-ly",
+      title: "Fomex 15–18 ly",
+      order: 4,
+      nominalLabel: "15–18 ly",
+      actualRangeMm: { min: 13.5, max: 17 },
+      sheetsPerBundle: "2–3 tấm/kẹp",
+      description: "Chân chữ, chữ nổi, logo khối, nội thất.",
+      specs: [],
+    },
+  ],
+
+  // brief.json offerings.applications. Nhóm phù hợp / mô tả / ảnh / album (MI-08) nhập ở T3.4.
+  applications: [
+    { slug: "bang-quang-cao-in-uv", title: "Bảng quảng cáo, in UV", order: 1, thicknessHint: "3 ly", recommendedGroups: [], album: [] },
+    { slug: "chu-noi-logo-khoi", title: "Chữ nổi, logo khối", order: 2, thicknessHint: "15–18 ly", recommendedGroups: [], album: [] },
+    { slug: "noi-that-vach-trang-tri", title: "Nội thất, vách trang trí", order: 3, thicknessHint: "8–18 ly", recommendedGroups: [], album: [] },
+    { slug: "backdrop-sinh-nhat", title: "Backdrop sinh nhật", order: 4, thicknessHint: "gợi ý 3–5 ly", recommendedGroups: [], album: [] },
+    { slug: "backdrop-su-kien", title: "Backdrop sự kiện", order: 5, thicknessHint: "gợi ý 3–10 ly", recommendedGroups: [], album: [] },
+    { slug: "cat-dan-decal", title: "Cắt dán decal", order: 6, thicknessHint: "gợi ý 3 ly", recommendedGroups: [], album: [] },
+    { slug: "hashtag-check-in", title: "Hashtag check-in", order: 7, thicknessHint: "gợi ý 8–10 ly", recommendedGroups: [], album: [] },
+  ],
+
+  // brief.json content.newsCategories (slug = slugifyVi(tên), giữ ?chu-de= cũ).
+  categories: [
+    { slug: "kien-thuc-vat-lieu", title: "Kiến thức vật liệu", order: 1 },
+    { slug: "tin-win", title: "Tin WIN", order: 2 },
+    { slug: "chon-gia-cong", title: "Chọn & gia công", order: 3 },
+    { slug: "danh-cho-dai-ly", title: "Dành cho đại lý", order: 4 },
+  ],
 };

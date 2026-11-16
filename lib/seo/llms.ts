@@ -2,6 +2,7 @@
  * /llms.txt (T2.6, GEO-05): tóm tắt doanh nghiệp + link trang chính + bài viết, sinh từ CMS.
  * Không thêm claim nào ngoài dữ liệu siteSettings (REQ-14).
  */
+import { addressLine } from "@/lib/contact/links";
 import type { SiteRoute } from "@/content/routes";
 import type { PostSummary, SiteSettings } from "@/lib/content/types";
 import { absoluteUrl } from "@/lib/site-url";
@@ -19,7 +20,7 @@ export function buildLlmsTxt(opts: {
   const facts: string[] = [];
   if (s.legalName) facts.push(`Tên pháp lý: ${s.legalName}`);
   if (s.slogan) facts.push(`Khẩu hiệu: ${s.slogan}`);
-  const addr = [s.address?.street, s.address?.locality].filter(Boolean).join(", ");
+  const addr = addressLine(s.address);
   if (addr) facts.push(`Địa chỉ: ${addr}`);
   if (s.phones.length) facts.push(`Điện thoại: ${s.phones.map((p) => p.number).join(" · ")}`);
   if (s.email) facts.push(`Email: ${s.email}`);

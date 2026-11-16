@@ -1,11 +1,11 @@
 import { ChatIcon, ClockIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/ui/icons";
-import { telHref } from "@/lib/contact/links";
+import { addressLine, telHref } from "@/lib/contact/links";
 import type { SiteSettings } from "@/lib/content/types";
 
 /** NAP đọc từ siteSettings (REQ-03): địa chỉ, SĐT, email, giờ làm việc, Zalo. Trường trống thì ẩn. */
 export function ContactList({ settings }: { settings: SiteSettings }) {
-  const { address, phones, email, openingHours, zalo } = settings;
-  const street = [address?.street, address?.locality].filter(Boolean).join(", ");
+  const { address, phones, email, openingHours, hoursNote, zalo } = settings;
+  const street = addressLine(address);
   const row = "flex gap-3";
   const icon = "mt-1 shrink-0 text-brand-ink";
 
@@ -34,7 +34,7 @@ export function ContactList({ settings }: { settings: SiteSettings }) {
             {phones.map((p, i) => (
               <span key={p.number}>
                 {i > 0 && <span aria-hidden="true">· </span>}
-                <a href={telHref(p.number)} className="font-semibold text-ink hover:text-brand-ink">
+                <a href={telHref(p.e164 ?? p.number)} className="font-semibold text-ink hover:text-brand-ink">
                   {p.label ? `${p.label}: ` : ""}
                   {p.number}
                 </a>
@@ -68,6 +68,7 @@ export function ContactList({ settings }: { settings: SiteSettings }) {
                 {h.label}: {h.opens} – {h.closes}
               </span>
             ))}
+            {hoursNote && <span className="block text-muted">{hoursNote}</span>}
           </span>
         </li>
       )}

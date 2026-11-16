@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { telHref, toE164 } from "./links";
+import { addressLine, telHref, toE164 } from "./links";
 
 describe("liên hệ (T1.5)", () => {
   it.each([
@@ -21,5 +21,16 @@ describe("liên hệ (T1.5)", () => {
   it("số không hợp lệ → undefined", () => {
     expect(toE164("abc")).toBeUndefined();
     expect(toE164("12")).toBeUndefined();
+  });
+});
+
+describe("addressLine", () => {
+  it.each([
+    [{ display: "KCN A, Hà Nội", street: "KCN A", locality: "Hà Nội" }, "KCN A, Hà Nội"],
+    [{ street: "Số 1", locality: "Hà Nội" }, "Số 1, Hà Nội"],
+    [{ locality: "Hà Nội" }, "Hà Nội"],
+    [undefined, ""],
+  ])("%j → %s", (a, expected) => {
+    expect(addressLine(a)).toBe(expected);
   });
 });

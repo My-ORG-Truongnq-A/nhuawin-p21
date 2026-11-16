@@ -42,7 +42,7 @@ function clean<T>(value: T): T | undefined {
 
 function organization(s: SiteSettings, siteUrl: string): Node {
   const id = `${siteUrl}/#organization`;
-  const phones = s.phones.map((p) => toE164(p.number)).filter((p): p is string => !!p);
+  const phones = s.phones.map((p) => p.e164 ?? toE164(p.number)).filter((p): p is string => !!p);
   const a = s.address;
   return {
     "@type": s.schemaType,

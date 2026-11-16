@@ -8,7 +8,7 @@ import { Container } from "./Container";
 /**
  * Footer (T1.4, REQ-07): logo đầy đủ rộng min(360px, 86vw) trên nền sáng (logo không có bản trắng),
  * NAP từ siteSettings, cột Khám phá / Hợp tác từ CMS, mạng xã hội chỉ khi đã xác nhận,
- * link Chính sách bảo mật chỉ khi trang đã publish (REQ-21).
+ * liên kết pháp lý (Chính sách bảo mật) chỉ khi trang đã publish (REQ-21) — CMS footer.legalLinks.
  */
 export async function Footer() {
   const [settings, footer] = await Promise.all([getSiteSettings(), getFooter()]);
@@ -21,7 +21,7 @@ export async function Footer() {
         <div className="space-y-5">
           <Logo settings={settings} placement="footer" />
           {settings.legalName && <p className="font-semibold text-ink">{settings.legalName}</p>}
-          <ContactList settings={settings} />
+          {footer.showContact && <ContactList settings={settings} />}
           {socials.length > 0 && (
             <ul className="flex flex-wrap gap-3 text-sm">
               {socials.map((s) => (
@@ -59,10 +59,16 @@ export async function Footer() {
       <div className="bg-ink-950 text-cyan-200">
         <Container className="flex flex-col gap-2 py-4 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>© {owner}. Bảo lưu mọi quyền.</p>
-          {footer.privacyLink && (
-            <Link href={resolveLink(footer.privacyLink.link).href} className="underline underline-offset-2">
-              {footer.privacyLink.label}
-            </Link>
+          {footer.legalLinks.length > 0 && (
+            <ul className="flex flex-wrap gap-4">
+              {footer.legalLinks.map((l) => (
+                <li key={l.label}>
+                  <Link href={resolveLink(l.link).href} className="underline underline-offset-2">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           )}
         </Container>
       </div>

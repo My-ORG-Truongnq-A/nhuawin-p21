@@ -7,6 +7,7 @@ describe("resolveLink (T1.3)", () => {
     [{ kind: "internal", path: "/san-pham", anchor: "bang-quy-cach" } as const, { href: "/san-pham#bang-quy-cach", external: false }],
     [{ kind: "internal", path: "/ve-win", anchor: "#nha-may" } as const, { href: "/ve-win#nha-may", external: false }],
     [{ kind: "external", url: "https://zalo.me/x" } as const, { href: "https://zalo.me/x", external: true }],
+    [{ kind: "external", url: "tel:+84900000000" } as const, { href: "tel:+84900000000", external: false }],
   ])("%j", (link, expected) => {
     expect(resolveLink(link)).toEqual(expected);
   });

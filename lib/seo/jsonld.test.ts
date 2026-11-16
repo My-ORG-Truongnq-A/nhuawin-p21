@@ -45,7 +45,14 @@ describe("buildGraph (T2.5, REQ-26, GEO-02)", () => {
   });
 
   it("trường chưa có dữ kiện bị bỏ, không để chuỗi rỗng", () => {
-    const minimal: SiteSettings = { brandName: "A", schemaType: "Organization", phones: [], socials: [], openingHours: [] };
+    const minimal: SiteSettings = {
+      brandName: "A",
+      schemaType: "Organization",
+      phones: [],
+      socials: [],
+      openingHours: [],
+      floatingContact: { enabled: true, showCall: true, showZalo: true, showFacebook: true },
+    };
     const org = byType(buildGraph({ settings: minimal, siteUrl, page: { path: "/", name: "A" } }), "Organization")!;
     expect(Object.keys(org).sort()).toEqual(["@id", "@type", "name", "url"]);
     expect(JSON.stringify(org)).not.toContain('""');

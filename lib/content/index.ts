@@ -27,46 +27,25 @@ export function contentSource(): "seed" | "sanity" {
   return serverEnv().contentSource;
 }
 
-export async function getSiteSettings() {
+/**
+ * Đọc có cache: khoá là đối số nên mỗi loại một mục cache; gắn đủ tag của loại (CONTENT_TAGS).
+ * Không có no-store / revalidate: 0 — làm mới nhờ webhook revalidateTag.
+ */
+async function cachedRead<K extends ContentKey>(key: K): Promise<ContentMap[K]> {
   "use cache";
-  cacheTag(CONTENT_TAGS.siteSettings);
+  cacheTag(...CONTENT_TAGS[key]);
   cacheLife("hours");
-  return read("siteSettings");
+  return read(key);
 }
 
-export async function getHeader() {
-  "use cache";
-  cacheTag(CONTENT_TAGS.header);
-  cacheLife("hours");
-  return read("header");
-}
-
-export async function getFooter() {
-  "use cache";
-  cacheTag(CONTENT_TAGS.footer);
-  cacheLife("hours");
-  return read("footer");
-}
-
-export async function getHomePage() {
-  "use cache";
-  cacheTag(CONTENT_TAGS.homePage);
-  cacheLife("hours");
-  return read("homePage");
-}
-
-export async function getNotFoundPage() {
-  "use cache";
-  cacheTag(CONTENT_TAGS.notFoundPage);
-  cacheLife("hours");
-  return read("notFoundPage");
-}
-
-export async function getPosts() {
-  "use cache";
-  cacheTag(CONTENT_TAGS.posts);
-  cacheLife("hours");
-  return read("posts");
-}
+export const getSiteSettings = () => cachedRead("siteSettings");
+export const getHeader = () => cachedRead("header");
+export const getFooter = () => cachedRead("footer");
+export const getHomePage = () => cachedRead("homePage");
+export const getNotFoundPage = () => cachedRead("notFoundPage");
+export const getPosts = () => cachedRead("posts");
+export const getProductGroups = () => cachedRead("productGroups");
+export const getApplications = () => cachedRead("applications");
+export const getCategories = () => cachedRead("categories");
 
 export type * from "./types";
