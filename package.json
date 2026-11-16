@@ -10,11 +10,13 @@
     "test": "vitest run",
     "e2e": "playwright test",
     "check:hardcode": "tsx scripts/check-hardcode.ts",
-    "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm check:hardcode"
+    "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm check:hardcode",
+    "schema:validate": "sanity schema validate"
   },
   "dependencies": {
     "@sanity/image-url": "^2.1.1",
     "@sanity/locale-vi-vn": "^1.1.38",
+    "@sanity/table": "^3.1.21",
     "next": "16.4.6",
     "next-sanity": "^13.4.0",
     "react": "19.3.0",
@@ -32,6 +34,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "groq-js": "^2.0.1",
     "tailwindcss": "4.3.3",
     "tsx": "^4.23.15",
     "typescript": "^5",

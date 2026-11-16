@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { CONTENT_TYPES } from "@/lib/content/tags";
-import { documentTypes } from "@/sanity/schemaTypes/documents";
+import { allDocumentTypes } from "@/sanity/schemaTypes";
 import { planRevalidation } from "./revalidate";
 
 describe("planRevalidation (T3.7, KT-02)", () => {
@@ -32,7 +32,20 @@ describe("planRevalidation (T3.7, KT-02)", () => {
     expect(planRevalidation(body)).toBeNull();
   });
 
-  it("CONTENT_TYPES khớp đúng các document trong schema", () => {
-    expect([...CONTENT_TYPES].sort()).toEqual(documentTypes.map((t) => t.name).sort());
+  it.each([
+    ["productGroup", ["/", "/san-pham", "/bao-gia"]],
+    ["application", ["/", "/san-pham"]],
+    ["category", ["/tin-tuc"]],
+    ["productsPage", ["/san-pham"]],
+    ["privacyPage", ["/chinh-sach-bao-mat"]],
+    ["footer", []],
+    ["leadForms", []],
+    ["redirectSettings", []],
+  ])("%s → tag cùng tên + %j", (type, paths) => {
+    expect(planRevalidation({ _type: type, _id: type })).toEqual({ tags: [type], paths });
+  });
+
+  it("CONTENT_TYPES khớp đúng 18 loại tài liệu trong schema", () => {
+    expect([...CONTENT_TYPES].sort()).toEqual(allDocumentTypes.map((t) => t.name).sort());
   });
 });
