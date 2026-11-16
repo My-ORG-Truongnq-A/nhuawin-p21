@@ -10,7 +10,6 @@
     "test": "vitest run",
     "e2e": "playwright test",
     "check:hardcode": "tsx scripts/check-hardcode.ts",
-    "seed:build": "tsx scripts/build-seed.ts",
     "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm check:hardcode"
   },
   "dependencies": {

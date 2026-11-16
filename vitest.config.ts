@@ -1,15 +1,15 @@
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitest/config";
 
-const root = fileURLToPath(new URL(".", import.meta.url));
+const root = fileURLToPath(new URL(".", import.meta.url)).replace(/\\/g, "/");
 
 export default defineConfig({
   resolve: {
-    alias: {
-      "@/": root,
+    alias: [
+      { find: /^@\//, replacement: root },
       // `server-only` ném lỗi ngoài React Server; trong test thay bằng module rỗng.
-      "server-only": `${root}tests/setup/server-only.ts`,
-    },
+      { find: /^server-only$/, replacement: `${root}tests/setup/server-only.ts` },
+    ],
   },
   test: {
     environment: "node",
