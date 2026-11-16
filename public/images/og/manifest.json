@@ -1,0 +1,65 @@
+[
+  {
+    "template": "home",
+    "file": "/images/og/home.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 21137,
+    "alt": "Ảnh chia sẻ trang Nhà sản xuất tấm Fomex — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  },
+  {
+    "template": "san-pham",
+    "file": "/images/og/san-pham.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 20239,
+    "alt": "Ảnh chia sẻ trang Sản phẩm tấm Fomex — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  },
+  {
+    "template": "bao-gia",
+    "file": "/images/og/bao-gia.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 21037,
+    "alt": "Ảnh chia sẻ trang Nhận báo giá tấm Fomex — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  },
+  {
+    "template": "ve-win",
+    "file": "/images/og/ve-win.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 20407,
+    "alt": "Ảnh chia sẻ trang Về Nhựa WIN Việt Nam — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  },
+  {
+    "template": "hop-tac",
+    "file": "/images/og/hop-tac.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 20488,
+    "alt": "Ảnh chia sẻ trang Hợp tác phân phối — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  },
+  {
+    "template": "tin-tuc",
+    "file": "/images/og/tin-tuc.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 20767,
+    "alt": "Ảnh chia sẻ trang Tin tức & kiến thức Fomex — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  },
+  {
+    "template": "lien-he",
+    "file": "/images/og/lien-he.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 19221,
+    "alt": "Ảnh chia sẻ trang Liên hệ Nhựa WIN — Nhựa WIN Việt Nam",
+    "source": "generated-from-client-logo"
+  }
+]
