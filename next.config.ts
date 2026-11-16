@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   cacheComponents: true,
   partialPrefetching: true,
+  // Hai root layout ((site), (studio)) → 404 toàn cục có header/footer (app/global-not-found.tsx).
+  experimental: { globalNotFound: true },
   // URL web cũ không có "/" cuối (seo_plan hostPolicy).
   trailingSlash: false,
   images: {

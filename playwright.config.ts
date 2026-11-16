@@ -1,6 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const PORT = Number(process.env.E2E_PORT ?? 3100);
+const PORT = Number(process.env.E2E_PORT ?? 3200);
 const BASE_URL = process.env.E2E_BASE_URL ?? `http://localhost:${PORT}`;
 
 /**
@@ -21,7 +21,8 @@ export default defineConfig({
   webServer: process.env.E2E_BASE_URL
     ? undefined
     : {
-        command: `pnpm start --port ${PORT}`,
+        // Gọi next trực tiếp (không qua wrapper pnpm) để Playwright tắt hẳn server khi xong.
+        command: `node node_modules/next/dist/bin/next start --port ${PORT}`,
         url: BASE_URL,
         reuseExistingServer: false,
         timeout: 120_000,
