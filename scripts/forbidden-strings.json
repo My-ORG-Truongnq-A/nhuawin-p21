@@ -1,0 +1,20 @@
+{
+  "$comment": "check:hardcode (T0.4, REQ-03, REQ-14). sourceOnly: cấm trong mã nguồn (được phép ở seed/, tests/fixtures/, docs/). everywhere: cấm cả trong seed — claim chưa xác minh khi MI-11…MI-14 còn mở.",
+  "sourceOnly": [
+    { "value": "0824 862 689", "kind": "phone", "reason": "SĐT đọc từ siteSettings (CM-01)" },
+    { "value": "0979 072 186", "kind": "phone", "reason": "SĐT đọc từ siteSettings (CM-01)" },
+    { "value": "nhuawinvietnam@gmail.com", "kind": "text", "reason": "Email đọc từ siteSettings (CM-01)" },
+    { "value": "Quất Động", "kind": "text", "reason": "Địa chỉ đọc từ siteSettings (CM-01)" },
+    { "value": "zalo.me/0824862689", "kind": "text", "reason": "Link Zalo đọc từ siteSettings (CM-01)" },
+    { "value": "Thượng Phúc", "kind": "text", "reason": "Địa chỉ đọc từ siteSettings (CM-01)" },
+    { "value": "61591527334082", "kind": "text", "reason": "Fanpage đọc từ siteSettings (MI-16)" }
+  ],
+  "everywhere": [
+    { "value": "2 triệu", "kind": "text", "reason": "Claim chưa xác minh (REQ-14, MI-11…MI-14)" }
+  ],
+  "scanDirs": ["app", "components", "lib", "sanity", "styles", "content", "seed", "scripts", "public"],
+  "scanRootFiles": ["next.config.ts", "sanity.config.ts", "README.md"],
+  "sourceExempt": ["seed/", "tests/fixtures/", "docs/"],
+  "ignoreFiles": ["scripts/forbidden-strings.json", "scripts/check-hardcode.test.ts"],
+  "extensions": [".ts", ".tsx", ".js", ".mjs", ".css", ".md", ".json", ".txt", ".svg", ".html"]
+}
