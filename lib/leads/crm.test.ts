@@ -19,7 +19,7 @@ describe("sendToCrm (T5.2)", () => {
     const env = { DGA_API_URL: "https://crm.example.test/leads", DGA_FORM_KEY: "k" };
     vi.stubGlobal("fetch", vi.fn(async () => new Response(null, { status: 500 })));
     expect((await sendToCrm(lead, env)).ok).toBe(false);
-    const ok = vi.fn(async (_u: string, _i: RequestInit) => new Response(null, { status: 201 }));
+    const ok = vi.fn<typeof fetch>(async () => new Response(null, { status: 201 }));
     vi.stubGlobal("fetch", ok);
     expect((await sendToCrm(lead, env)).ok).toBe(true);
     expect(ok.mock.calls[0][1]).toMatchObject({ method: "POST", headers: { "X-Form-Key": "k" } });

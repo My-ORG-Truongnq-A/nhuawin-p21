@@ -33,5 +33,9 @@ export function CmsImage({ image, sizes, className, lcp = false, fill = false }:
     ...(isSanity ? { loader: sanityLoader } : {}),
     ...(lcp ? { preload: true, fetchPriority: "high" as const } : { loading: "lazy" as const }),
   };
-  return fill ? <Image {...common} fill /> : <Image {...common} width={image.width} height={image.height} />;
+  return fill ? (
+    <Image {...common} alt={image.alt} fill />
+  ) : (
+    <Image {...common} alt={image.alt} width={image.width} height={image.height} />
+  );
 }
