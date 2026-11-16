@@ -70,3 +70,19 @@ html.js [data-reveal].is-revealed {
   opacity: 1;
   transform: none;
 }
+
+/* Ảnh hero (PA1): lùi nhẹ vào khung khi tải — chỉ transform, KHÔNG opacity (ảnh LCP không mờ dần, HN-02). */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-media {
+    animation: hero-settle var(--motion-slow) var(--ease-out) both;
+  }
+}
+
+@keyframes hero-settle {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: none;
+  }
+}
