@@ -10,16 +10,24 @@ export type SiteRoute = {
   noindex?: boolean;
 };
 
+export const PRIVACY_PATH = "/chinh-sach-bao-mat";
+
 export const SITE_ROUTES: SiteRoute[] = [
   { path: "/", title: "Trang chủ", enabled: true },
-  { path: "/san-pham", title: "Sản phẩm", enabled: false }, // T4.2
-  { path: "/bao-gia", title: "Nhận báo giá", enabled: false }, // T4.3
-  { path: "/ve-win", title: "Về WIN", enabled: false }, // T4.4
-  { path: "/hop-tac", title: "Hợp tác", enabled: false }, // T4.5
-  { path: "/tin-tuc", title: "Tin tức", enabled: false }, // T4.6
-  { path: "/lien-he", title: "Liên hệ", enabled: false }, // T4.8
-  { path: "/chinh-sach-bao-mat", title: "Chính sách bảo mật", enabled: false }, // T4.9 (REQ-21)
+  { path: "/san-pham", title: "Sản phẩm", enabled: true }, // T4.2
+  { path: "/bao-gia", title: "Nhận báo giá", enabled: true }, // T4.3
+  { path: "/ve-win", title: "Về WIN", enabled: true }, // T4.4
+  { path: "/hop-tac", title: "Hợp tác", enabled: true }, // T4.5
+  { path: "/tin-tuc", title: "Tin tức", enabled: true }, // T4.6
+  { path: "/lien-he", title: "Liên hệ", enabled: true }, // T4.8
+  // T4.9 (REQ-21): template có; chỉ vào sitemap / llms.txt khi privacyPage đã publish (publishedRoutes).
+  { path: PRIVACY_PATH, title: "Chính sách bảo mật", enabled: true },
 ];
 
+/** Route chỉ sống khi singleton đã publish. */
+export function publishedRoutes(privacyPublished: boolean): SiteRoute[] {
+  return SITE_ROUTES.filter((r) => r.path !== PRIVACY_PATH || privacyPublished);
+}
+
 /** Bài viết có trang riêng chưa (T4.7). Tắt thì posts.xml / llms.txt không liệt kê bài. */
-export const POSTS_ENABLED = false;
+export const POSTS_ENABLED = true;
