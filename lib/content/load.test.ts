@@ -41,6 +41,13 @@ describe("loadContent — một cửa, có seed dự phòng (KT-01)", () => {
     const r = await loadContent("posts", { source: "sanity", fetchSanity: async () => [], log: silent });
     expect(r).toEqual({ data: [], fromSeed: false });
   });
+
+  // BUILD-EMPTY-CMS: dataset trống — GROQ trả null cho singleton (`*[_id == …][0]`) và [] cho danh sách.
+  it.each(Object.keys(SEED) as (keyof typeof SEED)[])("dataset trống: %s không sập (singleton → seed, danh sách → [])", async (key) => {
+    const isList = Array.isArray(SEED[key]);
+    const r = await loadContent(key, { source: "sanity", fetchSanity: async () => (isList ? [] : null), log: silent });
+    expect(r).toEqual(isList ? { data: [], fromSeed: false } : { data: SEED[key], fromSeed: true });
+  });
 });
 
 describe("SEED khớp kiểu chung", () => {

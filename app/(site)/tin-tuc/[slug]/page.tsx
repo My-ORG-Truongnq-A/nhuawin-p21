@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { getNewsPage, getPost, getPosts, getProductGroups, getSiteSettings } from "@/lib/content";
 import { newsHref } from "@/lib/news/params";
+import { isPlaceholderPostSlug, postStaticParams } from "@/lib/news/static-params";
 import { buildGraph } from "@/lib/seo/jsonld";
 import { blogPostingNode } from "@/lib/seo/nodes";
 import { pageMetadata } from "@/lib/seo/page-metadata";
@@ -21,14 +22,14 @@ type Props = PageProps<"/tin-tuc/[slug]">;
  */
 export const ensureStatic = "navigation";
 
+/** CMS trống → một slug giữ chỗ (cacheComponents đòi ≥ 1 param); slug đó luôn 404 + noindex. */
 export async function generateStaticParams() {
-  const posts = await getPosts();
-  return posts.map((p) => ({ slug: p.slug }));
+  return postStaticParams(await getPosts());
 }
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const post = await getPost(slug);
+  const post = isPlaceholderPostSlug(slug) ? null : await getPost(slug);
   if (!post) return pageMetadata({ path: `/tin-tuc/${slug}`, noindex: true });
   return pageMetadata({
     path: `/tin-tuc/${post.slug}`,
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: Props) {
 /** /tin-tuc/[slug] (T4.7, article): giữ tiêu đề / ngày / chủ đề / ảnh như web cũ; bài liên quan; CTA → /bao-gia. */
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
-  const post = await getPost(slug);
+  const post = isPlaceholderPostSlug(slug) ? null : await getPost(slug);
   if (!post) notFound();
   const [all, news, settings, groups] = await Promise.all([getPosts(), getNewsPage(), getSiteSettings(), getProductGroups()]);
   const picked = post.relatedSlugs.map((s) => all.find((p) => p.slug === s)).filter((p) => p !== undefined);
