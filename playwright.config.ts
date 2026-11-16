@@ -26,6 +26,7 @@ export default defineConfig({
         url: BASE_URL,
         reuseExistingServer: false,
         timeout: 120_000,
-        env: { SANITY_SOURCE: "seed" },
+        // LEADS_DRY_RUN: form e2e không gửi lead thật (LD-01).
+        env: { SANITY_SOURCE: "seed", LEADS_DRY_RUN: "1" },
       },
 });
