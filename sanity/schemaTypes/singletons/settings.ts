@@ -50,6 +50,17 @@ export const siteSettings = defineType({
       type: "string",
       group: "identity",
     }),
+    defineField({
+      name: "quickFacts",
+      title: "Khối thông tin nhanh (Làm gì / Cho ai)",
+      description: "Hiện trên Trang chủ, Về WIN, Liên hệ (REQ-27). Ai / Ở đâu / Liên hệ lấy từ các trường khác.",
+      type: "object",
+      group: "identity",
+      fields: [
+        defineField({ name: "what", title: "Làm gì", type: "string" }),
+        defineField({ name: "forWhom", title: "Cho ai", type: "string" }),
+      ],
+    }),
     defineField({ name: "logoFull", title: "Logo đầy đủ", type: "figure", group: "identity", validation: (r) => r.required() }),
     defineField({ name: "logoHeader", title: "Logo cho thanh menu (bản rút gọn)", type: "figure", group: "identity" }),
     defineField({

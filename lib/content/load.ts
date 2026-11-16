@@ -2,9 +2,9 @@
  * Bộ nạp thuần (không phụ thuộc Next) của cửa nội dung — để test được.
  * Bản có cache (`"use cache"` + cacheTag) nằm ở `lib/content/index.ts`.
  */
-import { SEED } from "@/seed/content";
-import { NORMALIZERS } from "./normalize";
-import type { ContentKey, ContentMap } from "./types";
+import { SEED, SEED_POSTS } from "@/seed/content";
+import { NORMALIZERS, postDetail } from "./normalize";
+import type { ContentKey, ContentMap, Post } from "./types";
 
 export type LoadDeps = {
   source: "seed" | "sanity";
@@ -29,5 +29,27 @@ export async function loadContent<K extends ContentKey>(key: K, deps: LoadDeps):
   } catch (err) {
     log.warn(`[content] Đọc "${key}" từ Sanity lỗi (${(err as Error).message}) → dùng seed.`);
     return { data: SEED[key], fromSeed: true };
+  }
+}
+
+export type LoadPostDeps = {
+  source: "seed" | "sanity";
+  fetchPost: (slug: string) => Promise<unknown>;
+  log?: { warn: (msg: string) => void };
+};
+
+/**
+ * Một bài theo slug. Sanity trả null (không có bài) → null (404), KHÔNG rơi về seed:
+ * bài đã gỡ trong CMS không được sống lại từ seed. Chỉ lỗi mạng mới dùng seed.
+ */
+export async function loadPost(slug: string, deps: LoadPostDeps): Promise<Post | null> {
+  const fromSeed = () => SEED_POSTS.find((p) => p.slug === slug) ?? null;
+  if (deps.source === "seed") return fromSeed();
+  try {
+    const raw = await deps.fetchPost(slug);
+    return raw ? postDetail(raw) : null;
+  } catch (err) {
+    (deps.log ?? console).warn(`[content] Đọc bài "${slug}" từ Sanity lỗi (${(err as Error).message}) → dùng seed.`);
+    return fromSeed();
   }
 }

@@ -77,7 +77,10 @@ export type SiteSettings = {
   gtmId?: string;
   taxId?: string;
   foundingYear?: number;
+  registeredAddress?: string;
   areaServed?: string;
+  /** Khối thông tin nhanh (REQ-27): dòng "Làm gì" / "Cho ai" sửa trong CMS. */
+  quickFacts?: { what?: string; forWhom?: string };
 };
 
 export type Seo = {
@@ -102,6 +105,25 @@ export type FooterContent = {
   copyright?: string;
 };
 
+/**
+ * Portable Text đã chuẩn hoá: link trong markDefs mang `href` đã dựng sẵn (GROQ resolve reference).
+ * Khối: block (normal/h2/h3/h4/blockquote, listItem), figure, table, embed, faq.
+ */
+export type RichText = ({ _type: string; _key: string } & Record<string, unknown>)[];
+
+/** Ý nổi bật (featureItem). Ý `needs_confirmation` bị lọc ngay ở cửa (REQ-14, CM-09). */
+export type Feature = { title: string; text?: string; icon?: string; image?: ImageRef };
+
+export type SectionHeading = { eyebrow?: string; title?: string; intro?: string };
+
+export type FaqItem = { question: string; answer: RichText };
+export type Faq = { title?: string; items: FaqItem[] };
+
+export type ProcessStep = { title: string; text?: string; image?: ImageRef };
+
+/** Khối form tin nhắn trên trang: tiêu đề riêng hoặc dùng mặc định ở leadForms. */
+export type MessageFormBlock = { heading?: string; subheading?: string };
+
 export type HomePage = {
   seo: Seo;
   hero: {
@@ -112,6 +134,97 @@ export type HomePage = {
     secondaryCta?: NavItem;
     image?: ImageRef;
   };
+  capability?: { heading: SectionHeading; items: Feature[] };
+  productGroupsSection?: SectionHeading;
+  applicationsSection?: SectionHeading;
+  partnerSection?: { heading: SectionHeading; cta?: NavItem };
+  latestPosts?: { heading: SectionHeading; count: number };
+  messageForm: MessageFormBlock;
+};
+
+export type ProductsPage = {
+  seo: Seo;
+  title: string;
+  intro?: string;
+  heroImage?: ImageRef;
+  groupsSection?: SectionHeading;
+  specTableSection?: { heading: SectionHeading; footnote?: string };
+  applicationsSection?: SectionHeading;
+  whyChoose?: { heading: SectionHeading; items: Feature[] };
+  chooseByUse?: { heading: SectionHeading; rows: { use: string; thickness: string; note?: string }[] };
+  faq?: Faq;
+  messageForm: MessageFormBlock;
+};
+
+export type QuotePage = {
+  seo: Seo;
+  title: string;
+  intro?: string;
+  benefits: Feature[];
+  faq?: Faq;
+};
+
+export type AboutPage = {
+  seo: Seo;
+  title: string;
+  intro?: string;
+  heroImage?: ImageRef;
+  story?: { heading: SectionHeading; body: RichText; image?: ImageRef };
+  mission?: string;
+  vision?: string;
+  values: string[];
+  capability?: { heading: SectionHeading; items: Feature[] };
+  factory?: { heading: SectionHeading; processSteps: ProcessStep[]; gallery: ImageRef[]; visitCta?: NavItem };
+  messageForm: MessageFormBlock;
+};
+
+export type PartnershipPage = {
+  seo: Seo;
+  title: string;
+  intro?: string;
+  heroImage?: ImageRef;
+  partnerGroups?: { heading: SectionHeading; items: Feature[] };
+  growTogether?: { eyebrow?: string; title: string; intro?: string; benefits: Feature[]; logisticsImage?: ImageRef };
+  processSteps: ProcessStep[];
+  registerCta?: NavItem;
+  faq?: Faq;
+};
+
+export type NewsPage = {
+  seo: Seo;
+  title: string;
+  intro?: string;
+  /** Số bài mỗi trang (OQ-CM-04). */
+  postsPerPage: number;
+  emptyText?: string;
+  articleCta?: { heading: string; text?: string; cta?: NavItem };
+};
+
+export type ContactPage = {
+  seo: Seo;
+  title: string;
+  intro?: string;
+  showMap: boolean;
+  messageForm: MessageFormBlock;
+};
+
+export type PrivacyPage = {
+  seo: Seo;
+  title: string;
+  body: RichText;
+  updatedAt: string;
+};
+
+/** Câu chữ 3 form (leadForms). Bộ trường + validate nằm trong code (lib/leads). */
+export type LeadForms = {
+  messageFormDefault: { heading: string; subheading?: string };
+  contact: { roleOptions: string[]; needOptions: string[]; notePlaceholder?: string; submitLabel: string };
+  quote: { heading?: string; notePlaceholder?: string; submitLabel: string };
+  partnership: { heading?: string; intro?: string; submitLabel: string };
+  successMessage: string;
+  /** Có thể chứa {hotline}. */
+  errorMessage: string;
+  privacyNote?: RichText;
 };
 
 export type NotFoundPage = {
@@ -129,6 +242,16 @@ export type PostSummary = {
   image?: ImageRef;
   category?: { slug: string; title: string };
   noindex: boolean;
+};
+
+/** Bài đầy đủ cho /tin-tuc/[slug]. */
+export type Post = PostSummary & {
+  seoTitle?: string;
+  seoDescription?: string;
+  ogImage?: ImageRef;
+  body: RichText;
+  /** Slug bài liên quan chọn tay; trống thì lấy cùng chủ đề. */
+  relatedSlugs: string[];
 };
 
 export type SpecRow = {
@@ -150,6 +273,8 @@ export type ProductGroup = {
   actualRangeMm?: { min: number; max: number };
   sheetsPerBundle?: string;
   description?: string;
+  /** Nhãn nhỏ trên thẻ (vd "Phổ biến"). */
+  badge?: string;
   image?: ImageRef;
   specs: SpecRow[];
   quoteCtaLabel?: string;
@@ -164,7 +289,7 @@ export type Application = {
   recommendedGroups: string[];
   summary?: string;
   cardImage?: ImageRef;
-  album: ImageRef[];
+  album: (ImageRef & { caption?: string })[];
 };
 
 export type Category = {
@@ -179,6 +304,15 @@ export type ContentMap = {
   header: HeaderContent;
   footer: FooterContent;
   homePage: HomePage;
+  productsPage: ProductsPage;
+  quotePage: QuotePage;
+  aboutPage: AboutPage;
+  partnershipPage: PartnershipPage;
+  newsPage: NewsPage;
+  contactPage: ContactPage;
+  /** null = chưa publish → route 404, không vào sitemap (REQ-21). */
+  privacyPage: PrivacyPage | null;
+  leadForms: LeadForms;
   notFoundPage: NotFoundPage;
   posts: PostSummary[];
   productGroups: ProductGroup[];

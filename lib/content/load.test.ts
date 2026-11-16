@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
-import { SEED } from "@/seed/content";
-import { loadContent } from "./load";
-import { NORMALIZERS } from "./normalize";
+import { SEED, SEED_POSTS } from "@/seed/content";
+import { loadContent, loadPost } from "./load";
+import { NORMALIZERS, postDetail } from "./normalize";
 
 const silent = { warn: vi.fn() };
 
@@ -46,5 +46,32 @@ describe("loadContent — một cửa, có seed dự phòng (KT-01)", () => {
 describe("SEED khớp kiểu chung", () => {
   it.each(Object.keys(SEED) as (keyof typeof SEED)[])("%s qua bộ chuẩn hoá không đổi", (key) => {
     expect(NORMALIZERS[key](SEED[key])).toEqual(SEED[key]);
+  });
+});
+
+describe("loadPost — bài theo slug", () => {
+  it("seed: có bài cũ, slug lạ → null", async () => {
+    const fetchPost = vi.fn();
+    expect((await loadPost("tam-fomex-la-gi", { source: "seed", fetchPost }))?.body.length).toBeGreaterThan(0);
+    expect(await loadPost("khong-ton-tai", { source: "seed", fetchPost })).toBeNull();
+    expect(fetchPost).not.toHaveBeenCalled();
+  });
+
+  it("Sanity trả null (bài đã gỡ) → null, KHÔNG sống lại từ seed", async () => {
+    expect(await loadPost("tam-fomex-la-gi", { source: "sanity", fetchPost: async () => null, log: silent })).toBeNull();
+  });
+
+  it("Sanity lỗi mạng → seed + log", async () => {
+    const log = { warn: vi.fn() };
+    const p = await loadPost("tam-fomex-la-gi", { source: "sanity", fetchPost: async () => { throw new Error("x"); }, log });
+    expect(p?.slug).toBe("tam-fomex-la-gi");
+    expect(log.warn).toHaveBeenCalledOnce();
+  });
+});
+
+describe("SEED_POSTS khớp kiểu bài đầy đủ", () => {
+  it.each(SEED_POSTS.map((p) => p.slug))("%s qua postDetail không đổi", (slug) => {
+    const p = SEED_POSTS.find((x) => x.slug === slug)!;
+    expect(postDetail(p)).toEqual(p);
   });
 });

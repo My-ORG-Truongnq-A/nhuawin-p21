@@ -31,11 +31,22 @@ export type ContentType = (typeof CONTENT_TYPES)[number];
  * Một khoá đọc nhiều loại (vd link Gọi / Zalo lấy từ siteSettings, bài kèm tên chủ đề) thì gắn đủ tag
  * để publish loại phụ cũng làm mới khoá này.
  */
+/** Tag của bài chi tiết (/tin-tuc/[slug]): bài + tên chủ đề. */
+export const POST_TAGS: ContentType[] = ["post", "category"];
+
 export const CONTENT_TAGS: Record<ContentKey, ContentType[]> = {
   siteSettings: ["siteSettings"],
   header: ["header", "siteSettings"],
   footer: ["footer", "siteSettings"],
   homePage: ["homePage", "siteSettings"],
+  productsPage: ["productsPage", "siteSettings"],
+  quotePage: ["quotePage", "siteSettings"],
+  aboutPage: ["aboutPage", "siteSettings"],
+  partnershipPage: ["partnershipPage", "siteSettings"],
+  newsPage: ["newsPage", "siteSettings"],
+  contactPage: ["contactPage", "siteSettings"],
+  privacyPage: ["privacyPage"],
+  leadForms: ["leadForms", "siteSettings"],
   notFoundPage: ["notFoundPage", "siteSettings"],
   posts: ["post", "category"],
   productGroups: ["productGroup"],

@@ -61,6 +61,7 @@ export const productGroup = defineType({
     }),
     defineField({ name: "sheetsPerBundle", title: "Số tấm / kẹp", type: "string" }),
     defineField({ name: "description", title: "Mô tả", type: "text", rows: 3 }),
+    defineField({ name: "badge", title: "Nhãn nhỏ trên thẻ (vd Phổ biến)", type: "string" }),
     defineField({ name: "image", title: "Ảnh nhóm", type: "figure", validation: (r) => r.required() }),
     defineField({
       name: "specs",

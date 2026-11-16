@@ -42,6 +42,7 @@ export const homePage = page("homePage", "Trang chủ", [
     type: "object",
     validation: (r) => r.required(),
     fields: [
+      defineField({ name: "eyebrow", title: "Dòng nhỏ trên tiêu đề (kicker)", type: "string" }),
       defineField({
         name: "headlineLines",
         title: "Tiêu đề H1 (mỗi dòng một mục)",
@@ -78,6 +79,23 @@ export const productsPage = page("productsPage", "Trang Sản phẩm", [
   defineField({ name: "applicationsSection", title: "Khối ứng dụng (#ung-dung)", type: "sectionHeading" }),
   headed("whyChoose", "Vì sao chọn tấm Fomex", [features("items", "Ý chính")]),
   defineField({ name: "chooseByUseSection", title: "Chọn độ dày theo hạng mục", type: "sectionHeading" }),
+  defineField({
+    name: "chooseByUseRows",
+    title: "Bảng chọn độ dày theo hạng mục",
+    type: "array",
+    of: [
+      defineArrayMember({
+        name: "useRow",
+        type: "object",
+        fields: [
+          defineField({ name: "use", title: "Hạng mục", type: "string", validation: (r) => r.required() }),
+          defineField({ name: "thickness", title: "Độ dày gợi ý", type: "string", validation: (r) => r.required() }),
+          defineField({ name: "note", title: "Ghi chú", type: "string" }),
+        ],
+        preview: { select: { title: "use", subtitle: "thickness" } },
+      }),
+    ],
+  }),
   faqField,
   messageFormField,
   legacyField,
@@ -95,8 +113,11 @@ export const quotePage = page("quotePage", "Trang Báo giá", [
 export const aboutPage = page("aboutPage", "Trang Về WIN", [
   seoField,
   h1Field,
+  introField,
   heroImageField,
+  defineField({ name: "storyHeading", title: "Tiêu đề khối giới thiệu", type: "sectionHeading" }),
   defineField({ name: "story", title: "Câu chuyện WIN", type: "blockContent" }),
+  defineField({ name: "storyImage", title: "Ảnh khối giới thiệu", type: "figure" }),
   defineField({ name: "mission", title: "Sứ mệnh", type: "text", rows: 3 }),
   defineField({ name: "vision", title: "Tầm nhìn", type: "text", rows: 3 }),
   defineField({ name: "values", title: "Giá trị cốt lõi", type: "array", of: [{ type: "string" }] }),
@@ -123,6 +144,7 @@ export const partnershipPage = page("partnershipPage", "Trang Hợp tác", [
     fields: [
       defineField({ name: "eyebrow", title: "Dòng nhỏ phía trên", type: "string" }),
       defineField({ name: "title", title: "Tiêu đề", type: "string", validation: (r) => r.required() }),
+      defineField({ name: "intro", title: "Đoạn mở", type: "text", rows: 3 }),
       features("benefits", "Lợi ích", 4),
       defineField({ name: "logisticsImage", title: "Ảnh xe nâng / xe tải tại nhà máy", type: "figure" }),
     ],

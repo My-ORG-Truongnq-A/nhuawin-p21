@@ -2,7 +2,8 @@ import { evaluate, parse } from "groq-js";
 import { describe, expect, it } from "vitest";
 import { NORMALIZERS } from "@/lib/content/normalize";
 import type { ContentKey, ContentMap } from "@/lib/content/types";
-import { QUERIES } from "./queries";
+import { postDetail } from "@/lib/content/normalize";
+import { POST_QUERY, QUERIES } from "./queries";
 
 /**
  * Chạy GROQ thật bằng groq-js trên dataset dựng tay theo schema (T3.6) — 0 request tới Sanity.
@@ -60,6 +61,53 @@ const dataset = [
   { _id: "productsPage", _type: "productsPage", title: "Sản phẩm" },
   { _id: "quotePage", _type: "quotePage", title: "Báo giá" },
   { _id: "privacyPage", _type: "privacyPage", title: "Chính sách" },
+  {
+    _id: "aboutPage",
+    _type: "aboutPage",
+    title: "Về A",
+    storyHeading: { title: "Giới thiệu" },
+    story: [
+      {
+        _type: "block",
+        _key: "b1",
+        style: "normal",
+        markDefs: [
+          { _type: "link", _key: "m1", kind: "internal", internal: ref("productsPage") },
+          { _type: "link", _key: "m2", kind: "external", href: "javascript:alert(1)" },
+        ],
+        children: [{ _type: "span", _key: "s1", text: "Xem sản phẩm", marks: ["m1"] }],
+      },
+    ],
+    capability: {
+      heading: { title: "Năng lực" },
+      items: [
+        { _key: "f1", title: "Đã xác nhận", verification: "confirmed" },
+        { _key: "f2", title: "Sản lượng chưa xác minh", verification: "needs_confirmation" },
+        { _key: "f3", title: "Mặc định" },
+      ],
+    },
+    factory: { heading: { title: "Nhà máy" }, processSteps: [{ _key: "p1", title: "Đùn ép" }], gallery: [fig("image-g3-1376x768-jpg", "Xưởng")] },
+    messageForm: { useDefault: false, heading: "Tiêu đề riêng" },
+  },
+  {
+    _id: "leadForms",
+    _type: "leadForms",
+    messageFormDefault: { heading: "Bạn cần nguồn hàng", subheading: "Để lại thông tin" },
+    contact: { roleOptions: ["Đại lý"], needOptions: ["Báo giá"], submitLabel: "Gửi" },
+    quote: { submitLabel: "Gửi báo giá" },
+    partnership: { submitLabel: "Gửi đăng ký" },
+    successMessage: "Cảm ơn",
+    errorMessage: "Gọi {hotline}",
+    privacyNote: [
+      {
+        _type: "block",
+        _key: "n1",
+        style: "normal",
+        markDefs: [{ _type: "link", _key: "m1", kind: "internal", internal: ref("privacyPage") }],
+        children: [{ _type: "span", _key: "s1", text: "Chính sách", marks: ["m1"] }],
+      },
+    ],
+  },
   { _id: "cat-1", _type: "category", title: "Tin WIN", slug: { current: "tin-win" }, order: 2 },
   { _id: "cat-2", _type: "category", title: "Kiến thức vật liệu", slug: { current: "kien-thuc-vat-lieu" }, order: 1 },
   {
@@ -109,7 +157,12 @@ const dataset = [
     updatedAt: "2026-09-05T00:00:00Z",
     category: ref("cat-2"),
     mainImage: fig("image-p1-1200x800-jpg", "Ảnh bài mới"),
-    seo: { noindex: true },
+    seo: { noindex: true, title: "SEO bài mới", description: "Mô tả bài mới" },
+    relatedPosts: [{ _key: "r", ...ref("post-old") }],
+    body: [
+      { _type: "block", _key: "b1", style: "h2", markDefs: [], children: [{ _type: "span", _key: "s", text: "Mục 1", marks: [] }] },
+      { _key: "f1", ...fig("image-p1-1200x800-jpg", "Ảnh trong bài"), caption: "Chú thích" },
+    ],
   },
   {
     _id: "header",
@@ -264,5 +317,37 @@ describe("GROQ → kiểu chung (T3.6)", () => {
 
     const c = await run("categories");
     expect(c.map((x) => x.slug)).toEqual(["kien-thuc-vat-lieu", "tin-win"]);
+  });
+
+  it("aboutPage: ý chờ xác nhận bị lọc; link nội bộ trong Portable Text → href; link không an toàn bị bỏ", async () => {
+    const a = await run("aboutPage");
+    expect(a.capability?.items.map((i) => i.title)).toEqual(["Đã xác nhận", "Mặc định"]);
+    expect(a.story?.heading).toEqual({ title: "Giới thiệu" });
+    const markDefs = (a.story?.body[0] as unknown as { markDefs: { _key: string; href?: string }[] }).markDefs;
+    expect(markDefs).toEqual([expect.objectContaining({ _key: "m1", href: "/san-pham" })]);
+    expect(a.factory?.processSteps).toEqual([{ title: "Đùn ép" }]);
+    expect(a.factory?.gallery[0].alt).toBe("Xưởng");
+    expect(a.messageForm).toEqual({ heading: "Tiêu đề riêng" });
+  });
+
+  it("privacyPage chưa có thân bài / ngày → null (route 404, không vào sitemap)", async () => {
+    const value = await evaluate(parse(QUERIES.privacyPage), { dataset });
+    expect(NORMALIZERS.privacyPage(await value.get())).toBeNull();
+  });
+
+  it("leadForms: câu chữ + ghi chú có link chính sách", async () => {
+    const l = await run("leadForms");
+    expect(l.contact.roleOptions).toEqual(["Đại lý"]);
+    const md = (l.privacyNote?.[0] as unknown as { markDefs: { href?: string }[] }).markDefs;
+    expect(md[0].href).toBe("/chinh-sach-bao-mat");
+  });
+
+  it("POST_QUERY: một bài theo slug, có thân bài, ảnh trong bài, bài liên quan, SEO riêng", async () => {
+    const value = await evaluate(parse(POST_QUERY), { dataset, params: { slug: "bai-moi" } });
+    const p = postDetail(await value.get());
+    expect(p).toMatchObject({ slug: "bai-moi", seoTitle: "SEO bài mới", seoDescription: "Mô tả bài mới", relatedSlugs: ["bai-cu"] });
+    expect(p?.body[1]).toMatchObject({ _type: "figure", alt: "Ảnh trong bài", caption: "Chú thích", width: 1200 });
+    const none = await evaluate(parse(POST_QUERY), { dataset, params: { slug: "khong-co" } });
+    expect(await none.get()).toBeNull();
   });
 });

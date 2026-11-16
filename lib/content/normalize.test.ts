@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { NORMALIZERS } from "./normalize";
+import { DEFAULT_POSTS_PER_PAGE, NORMALIZERS, feature, richText, safeHref } from "./normalize";
 
 describe("chuẩn hoá tại cửa nội dung (KT-01)", () => {
   it("siteSettings: null / chuỗi rỗng → bỏ; mảng null → []; social mặc định chưa xác nhận", () => {
@@ -69,5 +69,32 @@ describe("chuẩn hoá tại cửa nội dung (KT-01)", () => {
     const h = NORMALIZERS.homePage({ hero: { titleLines: ["Dòng 1", null, "Dòng 2"] }, seo: null });
     expect(h!.hero.titleLines).toEqual(["Dòng 1", "Dòng 2"]);
     expect(h!.seo.noindex).toBe(false);
+  });
+});
+
+describe("chuẩn hoá khối trang (P4)", () => {
+  it("newsPage: postsPerPage ngoài 6–24 hoặc không nguyên → mặc định", () => {
+    for (const v of [3, 30, 7.5, null]) expect(NORMALIZERS.newsPage({ title: "Tin", postsPerPage: v })!.postsPerPage).toBe(DEFAULT_POSTS_PER_PAGE);
+    expect(NORMALIZERS.newsPage({ title: "Tin", postsPerPage: 12 })!.postsPerPage).toBe(12);
+  });
+
+  it("feature chờ xác nhận không bao giờ ra trang (REQ-14)", () => {
+    expect(feature({ title: "Sản lượng", verification: "needs_confirmation" })).toBeUndefined();
+    expect(feature({ title: "Đo kiểm", verification: "confirmed" })).toEqual({ title: "Đo kiểm" });
+  });
+
+  it("leadForms thiếu câu bắt buộc → null (cửa rơi về seed)", () => {
+    expect(NORMALIZERS.leadForms({ successMessage: "x" })).toBeNull();
+  });
+
+  it("safeHref chỉ nhận path nội bộ, http(s), mailto:, tel:", () => {
+    expect(["/san-pham#a", "https://a.vn", "mailto:a@b.vn", "tel:+84900000000"].map(safeHref)).not.toContain(undefined);
+    expect(["javascript:alert(1)", "//evil.com", "", null].map(safeHref)).toEqual([undefined, undefined, undefined, undefined]);
+  });
+
+  it("richText: bỏ phần tử thiếu _key; figure thiếu ảnh bị bỏ", () => {
+    expect(richText([{ _type: "block" }, { _type: "figure", _key: "f" }, { _type: "table", _key: "t", rows: [] }])).toEqual([
+      { _type: "table", _key: "t", rows: [] },
+    ]);
   });
 });
