@@ -41,3 +41,7 @@ jobs:
         run: pnpm check:hardcode
       - name: build
         run: pnpm build
+      - name: e2e (seed)
+        run: |
+          pnpm exec playwright install --with-deps --only-shell chromium
+          pnpm e2e
