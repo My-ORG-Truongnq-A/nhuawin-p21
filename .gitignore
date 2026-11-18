@@ -30,6 +30,8 @@ npm-debug.log*
 .codex
 .cache
 .claude
+# thư mục skill do công cụ AI tạo — không bao giờ commit
+.agents/
 .digiauto/
 
 # tài liệu thô của khách (dữ liệu cá nhân, ảnh gốc, tệp lớn)
