@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # Tên job PHẢI là `ci` (GL-06: required check của main).
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # Chạy hoàn toàn bằng seed: không có token Sanity, 0 request tới Sanity (Sanity gói Free).
+      SANITY_SOURCE: seed
+      NEXT_PUBLIC_SITE_URL: https://ci.example.vercel.app
+      ALLOW_INDEXING: "0"
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: typecheck
+        run: pnpm typecheck
+      - name: lint
+        run: pnpm lint
+      - name: test
+        run: pnpm test
+      - name: check:hardcode
+        run: pnpm check:hardcode
+      - name: build
+        run: pnpm build
+      - name: e2e (seed)
+        run: |
+          pnpm exec playwright install --with-deps --only-shell chromium
+          pnpm e2e

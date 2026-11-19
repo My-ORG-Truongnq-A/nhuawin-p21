@@ -1,0 +1,48 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# testing
+/coverage
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# next.js
+/.next/
+/out/
+/build
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+.pnpm-debug.log*
+
+# env (KT-09): chặn mọi .env*, chỉ commit .env.example
+.env*
+!.env.example
+
+# công cụ / agent (KT-09)
+.vercel
+.codex
+.cache
+.claude
+# thư mục skill do công cụ AI tạo — không bao giờ commit
+.agents/
+.digiauto/
+
+# tài liệu thô của khách (dữ liệu cá nhân, ảnh gốc, tệp lớn)
+client-inputs/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Sanity
+/dist
+.sanity
+
+# KHÔNG chặn public/images (KT-09)

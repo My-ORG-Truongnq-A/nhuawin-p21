@@ -1,0 +1,4824 @@
+[
+  {
+    "_id": "aboutPage",
+    "_type": "aboutPage",
+    "seo": {
+      "_type": "seo",
+      "title": "Nhà máy sản xuất tấm Fomex tại Hà Nội | Nhựa WIN Việt Nam",
+      "description": "Công ty TNHH Nhựa WIN Việt Nam sản xuất tấm Fomex 3–18 ly tại Cụm công nghiệp Quất Động, Hà Nội. Năng lực, quy trình 6 công đoạn, hình ảnh nhà máy.",
+      "noindex": false
+    },
+    "title": "Nhà máy sản xuất tấm Fomex tại Hà Nội",
+    "intro": "Làm chủ công nghệ, chủ động nguồn Fomex Việt — cho nhà phân phối, đại lý và nhà thầu trên cả nước.",
+    "heroImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-30eb19aaa0852ead56c3b9a30fc6e16c03fd610d-1200x670-webp"
+      },
+      "alt": "Nhà máy Nhựa WIN Việt Nam: biển logo WIN, xe nâng và xe tải xếp kiện tấm Fomex",
+      "source": "legacy_site"
+    },
+    "storyHeading": {
+      "_type": "sectionHeading",
+      "eyebrow": "Giới thiệu tổng quan",
+      "title": "Nhà sản xuất tấm Fomex 3–18 ly tại Hà Nội"
+    },
+    "story": [
+      {
+        "_type": "block",
+        "_key": "s18",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s19",
+            "text": "Công ty TNHH Nhựa WIN Việt Nam đầu tư nhà máy và dây chuyền sản xuất tấm Fomex tại Cụm công nghiệp Quất Động, Hà Nội. WIN tập trung vào một dòng sản phẩm, làm chủ quy trình từ phối trộn nguyên liệu đến đo kiểm và xuất hàng.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "s20",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s21",
+            "text": "Khách hàng chính của WIN là nhà phân phối, đại lý vật liệu quảng cáo, nội ngoại thất và nhà thầu thi công theo chuỗi trên cả nước.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "storyImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b91627516de4ceeb5eb2b6df80590f23cce08b4c-1200x670-webp"
+      },
+      "alt": "Đội ngũ WIN trao đổi kỹ thuật tại nhà máy",
+      "source": "legacy_site"
+    },
+    "mission": "Góp phần phát triển nguồn cung Fomex sản xuất trong nước, giúp đối tác chủ động nguồn vật liệu cho công việc.",
+    "vision": "Trở thành nhà sản xuất tấm Fomex uy tín tại Việt Nam, từng bước vươn ra thị trường quốc tế.",
+    "values": [
+      "Chất lượng",
+      "Tiến độ",
+      "Đồng hành"
+    ],
+    "capability": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Năng lực sản xuất",
+        "title": "Quy mô và nền tảng công nghệ",
+        "intro": "Dây chuyền sản xuất hiện đại, tự động hóa từ phối trộn đến cắt khổ — đội ngũ WIN trực tiếp vận hành, bảo trì và kiểm soát chất lượng tại nhà máy."
+      },
+      "items": [
+        {
+          "_type": "featureItem",
+          "_key": "aboutP1",
+          "title": "Dải độ dày 3–18 ly",
+          "text": "Độ dày thực tế 2,4 – 17 mm.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "aboutP2",
+          "title": "14 loại quy cách",
+          "text": "Khổ 1220 × 2440 mm.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "aboutP3",
+          "title": "Giao hàng toàn quốc",
+          "text": "Cung ứng cho đối tác trên cả nước.",
+          "verification": "confirmed"
+        }
+      ]
+    },
+    "factory": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Nhà máy",
+        "title": "Hình ảnh nhà máy WIN",
+        "intro": "Quy trình sản xuất & kiểm tra chất lượng — 6 công đoạn khép kín tại nhà máy WIN."
+      },
+      "processSteps": [
+        {
+          "_type": "processStep",
+          "_key": "aboutP4",
+          "title": "Phối trộn nguyên liệu",
+          "text": "Định lượng theo công thức chuẩn.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-f9eb76ca6c77596c8187a1d5c86388039cc5532b-1200x670-webp"
+            },
+            "alt": "Hệ thống silo phối trộn nguyên liệu tại nhà máy WIN",
+            "source": "legacy_site"
+          }
+        },
+        {
+          "_type": "processStep",
+          "_key": "aboutP5",
+          "title": "Đùn ép",
+          "text": "Đùn ép liên tục, kiểm soát nhiệt ổn định.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-f8549bc6d8b7b5d861406658d6a1d6848fbdccb0-1200x670-webp"
+            },
+            "alt": "Đầu khuôn đùn tấm Fomex trên dây chuyền WIN",
+            "source": "legacy_site"
+          }
+        },
+        {
+          "_type": "processStep",
+          "_key": "aboutP6",
+          "title": "Định hình & làm nguội",
+          "text": "Giữ độ dày đều, bề mặt phẳng.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-63790826a10b824f0df64f283321ef4a0bc2e05f-1200x670-webp"
+            },
+            "alt": "Cụm lô cán định hình và làm nguội tấm Fomex",
+            "source": "legacy_site"
+          }
+        },
+        {
+          "_type": "processStep",
+          "_key": "aboutP7",
+          "title": "Cắt khổ",
+          "text": "Theo khổ tiêu chuẩn hoặc yêu cầu.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-a11951ed27aec28d7def993b49fc03a5f0e086b4-1200x670-webp"
+            },
+            "alt": "Máy cắt khổ tấm Fomex tự động",
+            "source": "legacy_site"
+          }
+        },
+        {
+          "_type": "processStep",
+          "_key": "aboutP8",
+          "title": "Đo kiểm",
+          "text": "Độ dày, độ phẳng, bề mặt theo từng lô.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-ee289459636a8f81e3164308e64bf594bab39765-1200x896-webp"
+            },
+            "alt": "Đo độ dày tấm Fomex bằng thước kẹp điện tử trên dây chuyền",
+            "source": "legacy_site"
+          }
+        },
+        {
+          "_type": "processStep",
+          "_key": "aboutP9",
+          "title": "Đóng gói & xuất hàng",
+          "text": "Đóng kẹp, giao đi toàn quốc.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-5c0400b7469a6680fe37bd48a100c7038f3dfa94-1200x670-webp"
+            },
+            "alt": "Khu xếp hàng với kiện tấm Fomex bọc màng và xe nâng",
+            "source": "legacy_site"
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "figure",
+          "_key": "aboutPa",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-fb4f6a1a1efc0710db277503f7c467ba5866d166-1200x670-webp"
+          },
+          "alt": "Kho thành phẩm tấm Fomex của Nhựa WIN Việt Nam",
+          "source": "legacy_site"
+        },
+        {
+          "_type": "figure",
+          "_key": "aboutPb",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-56776fce04e75fe9b3955bd7446d3c38b5d73a9c-1200x670-webp"
+          },
+          "alt": "Dây chuyền sản xuất tấm Fomex trong nhà xưởng WIN",
+          "source": "legacy_site"
+        },
+        {
+          "_type": "figure",
+          "_key": "aboutPc",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-359c275033a7f18217153b5c3d1de5f75368e226-1200x670-webp"
+          },
+          "alt": "Màn hình điều khiển dây chuyền đùn ép tại nhà máy WIN",
+          "source": "legacy_site"
+        },
+        {
+          "_type": "figure",
+          "_key": "aboutPd",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-7ac2121bd2baeed58a3140c188d39d1d5c9b65d1-1200x670-webp"
+          },
+          "alt": "Cụm dán màng bảo vệ lên bề mặt tấm Fomex",
+          "source": "legacy_site"
+        },
+        {
+          "_type": "figure",
+          "_key": "aboutPe",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-c66e6c5b7c0ecfd85488dc247e68684b774e48d1-1200x670-webp"
+          },
+          "alt": "Đoàn xe tải chở tấm Fomex xuất xưởng",
+          "source": "legacy_site"
+        },
+        {
+          "_type": "figure",
+          "_key": "aboutPf",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-cb2298097e2815ff5fe43101ea526f8e27b87f76-1200x670-webp"
+          },
+          "alt": "Sân nhà máy WIN, kiện tấm Fomex chờ xuất hàng",
+          "source": "legacy_site"
+        }
+      ],
+      "visitCta": {
+        "_type": "link",
+        "label": "Đặt lịch tham quan",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "contactPage"
+        },
+        "anchor": "lien-he",
+        "newTab": false
+      }
+    },
+    "messageForm": {
+      "_type": "messageFormBlock",
+      "useDefault": true
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/ve-win",
+      "path": "/ve-win",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "contactPage",
+    "_type": "contactPage",
+    "seo": {
+      "_type": "seo",
+      "title": "Liên hệ nhà máy tấm Fomex tại Hà Nội | Nhựa WIN Việt Nam",
+      "description": "Liên hệ Nhựa WIN Việt Nam: hotline, Zalo, Fanpage, địa chỉ nhà máy tại Cụm công nghiệp Quất Động, Hà Nội. Đặt lịch tham quan nhà máy, nhận báo giá tấm Fomex.",
+      "noindex": false
+    },
+    "title": "Liên hệ Nhựa WIN Việt Nam",
+    "intro": "Cần báo giá, đăng ký đại lý hay tham quan nhà máy? Chọn kênh thuận tiện nhất với bạn.",
+    "showMap": true,
+    "messageForm": {
+      "_type": "messageFormBlock",
+      "useDefault": true
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/lien-he",
+      "path": "/lien-he",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "footer",
+    "_type": "footer",
+    "columns": [
+      {
+        "_type": "footerColumn",
+        "_key": "footer1",
+        "title": "Khám phá",
+        "links": [
+          {
+            "_type": "link",
+            "_key": "footer2",
+            "label": "Sản phẩm",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "productsPage"
+            },
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footer3",
+            "label": "Bảng quy cách",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "productsPage"
+            },
+            "anchor": "bang-quy-cach",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footer4",
+            "label": "Ứng dụng",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "productsPage"
+            },
+            "anchor": "ung-dung",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footer5",
+            "label": "Về WIN",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "aboutPage"
+            },
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footer6",
+            "label": "Nhà máy",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "aboutPage"
+            },
+            "anchor": "nha-may",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footer7",
+            "label": "Tin tức",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "newsPage"
+            },
+            "newTab": false
+          }
+        ]
+      },
+      {
+        "_type": "footerColumn",
+        "_key": "footer8",
+        "title": "Hợp tác",
+        "links": [
+          {
+            "_type": "link",
+            "_key": "footer9",
+            "label": "Nhà phân phối",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "partnershipPage"
+            },
+            "anchor": "doi-tuong",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footera",
+            "label": "Đại lý vật liệu",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "partnershipPage"
+            },
+            "anchor": "doi-tuong",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footerb",
+            "label": "Nhà thầu thi công",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "partnershipPage"
+            },
+            "anchor": "doi-tuong",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footerc",
+            "label": "Nhận báo giá",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "quotePage"
+            },
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "footerd",
+            "label": "Liên hệ",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "contactPage"
+            },
+            "newTab": false
+          }
+        ]
+      }
+    ],
+    "showContact": true,
+    "legalLinks": []
+  },
+  {
+    "_id": "header",
+    "_type": "header",
+    "items": [
+      {
+        "_type": "navItem",
+        "_key": "header1",
+        "link": {
+          "_type": "link",
+          "label": "Sản phẩm",
+          "kind": "internal",
+          "internal": {
+            "_type": "reference",
+            "_ref": "productsPage"
+          },
+          "newTab": false
+        },
+        "children": [
+          {
+            "_type": "link",
+            "_key": "header2",
+            "label": "Bảng quy cách",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "productsPage"
+            },
+            "anchor": "bang-quy-cach",
+            "newTab": false
+          },
+          {
+            "_type": "link",
+            "_key": "header3",
+            "label": "Ứng dụng",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "productsPage"
+            },
+            "anchor": "ung-dung",
+            "newTab": false
+          }
+        ]
+      },
+      {
+        "_type": "navItem",
+        "_key": "header4",
+        "link": {
+          "_type": "link",
+          "label": "Về WIN",
+          "kind": "internal",
+          "internal": {
+            "_type": "reference",
+            "_ref": "aboutPage"
+          },
+          "newTab": false
+        },
+        "children": [
+          {
+            "_type": "link",
+            "_key": "header5",
+            "label": "Nhà máy",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "aboutPage"
+            },
+            "anchor": "nha-may",
+            "newTab": false
+          }
+        ]
+      },
+      {
+        "_type": "navItem",
+        "_key": "header6",
+        "link": {
+          "_type": "link",
+          "label": "Hợp tác",
+          "kind": "internal",
+          "internal": {
+            "_type": "reference",
+            "_ref": "partnershipPage"
+          },
+          "newTab": false
+        },
+        "children": [
+          {
+            "_type": "link",
+            "_key": "header7",
+            "label": "Đối tượng hợp tác",
+            "kind": "internal",
+            "internal": {
+              "_type": "reference",
+              "_ref": "partnershipPage"
+            },
+            "anchor": "doi-tuong",
+            "newTab": false
+          }
+        ]
+      },
+      {
+        "_type": "navItem",
+        "_key": "header8",
+        "link": {
+          "_type": "link",
+          "label": "Tin tức",
+          "kind": "internal",
+          "internal": {
+            "_type": "reference",
+            "_ref": "newsPage"
+          },
+          "newTab": false
+        },
+        "children": []
+      },
+      {
+        "_type": "navItem",
+        "_key": "header9",
+        "link": {
+          "_type": "link",
+          "label": "Liên hệ",
+          "kind": "internal",
+          "internal": {
+            "_type": "reference",
+            "_ref": "contactPage"
+          },
+          "newTab": false
+        },
+        "children": []
+      }
+    ],
+    "cta": {
+      "_type": "link",
+      "label": "Nhận báo giá",
+      "kind": "internal",
+      "internal": {
+        "_type": "reference",
+        "_ref": "quotePage"
+      },
+      "newTab": false
+    }
+  },
+  {
+    "_id": "homePage",
+    "_type": "homePage",
+    "seo": {
+      "_type": "seo",
+      "title": "Nhựa WIN Việt Nam — Nhà sản xuất tấm Fomex tại Việt Nam",
+      "description": "Tấm Fomex 3–18 ly sản xuất tại nhà máy WIN, Hà Nội. Cung ứng toàn quốc cho nhà phân phối, đại lý vật liệu quảng cáo, nội ngoại thất và nhà thầu thi công.",
+      "noindex": false
+    },
+    "hero": {
+      "eyebrow": "Nhà sản xuất tấm Fomex 3–18 ly tại Hà Nội",
+      "headlineLines": [
+        "Làm chủ công nghệ.",
+        "Chủ động nguồn Fomex Việt."
+      ],
+      "subheadline": "Tấm Fomex 3–18 ly sản xuất tại nhà máy WIN, Hà Nội — cung ứng cho nhà phân phối, đại lý vật liệu quảng cáo, nội ngoại thất và nhà thầu thi công theo chuỗi trên cả nước.",
+      "image": {
+        "_type": "figure",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-ecf830bb93853b28596ead7a69c8af44b729489a-1200x670-webp"
+        },
+        "alt": "Dây chuyền đùn ép tấm Fomex trắng dưới biển WIN trong nhà máy",
+        "source": "legacy_site"
+      },
+      "primaryCta": {
+        "_type": "link",
+        "label": "Nhận báo giá",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "quotePage"
+        },
+        "newTab": false
+      },
+      "secondaryCta": {
+        "_type": "link",
+        "label": "Đăng ký hợp tác",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "partnershipPage"
+        },
+        "anchor": "dang-ky",
+        "newTab": false
+      }
+    },
+    "capability": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Năng lực sản xuất",
+        "title": "Năng lực sản xuất tạo nền tảng hợp tác",
+        "intro": "Đầu tư công nghệ, phát triển năng lực vận hành và kiểm soát chất lượng ngay tại nhà máy ở Cụm công nghiệp Quất Động, Hà Nội."
+      },
+      "items": [
+        {
+          "_type": "featureItem",
+          "_key": "homePa1",
+          "title": "Công nghệ sản xuất",
+          "text": "Dây chuyền đùn ép đồng bộ, hiện đại; đội ngũ WIN trực tiếp vận hành.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-56776fce04e75fe9b3955bd7446d3c38b5d73a9c-1200x670-webp"
+            },
+            "alt": "Dây chuyền sản xuất tấm Fomex trong nhà xưởng WIN",
+            "source": "legacy_site"
+          },
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "homePa2",
+          "title": "Kiểm soát quy cách",
+          "text": "Đo kiểm độ dày, độ phẳng, bề mặt theo từng lô trước khi xuất kho.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-ee289459636a8f81e3164308e64bf594bab39765-1200x896-webp"
+            },
+            "alt": "Đo độ dày tấm Fomex bằng thước kẹp điện tử trên dây chuyền",
+            "source": "legacy_site"
+          },
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "homePa3",
+          "title": "Cung ứng cho đối tác",
+          "text": "Sản lượng ổn định cho đơn hàng lớn, giao hàng toàn quốc.",
+          "image": {
+            "_type": "figure",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-c66e6c5b7c0ecfd85488dc247e68684b774e48d1-1200x670-webp"
+            },
+            "alt": "Đoàn xe tải chở tấm Fomex xuất xưởng",
+            "source": "legacy_site"
+          },
+          "verification": "confirmed"
+        }
+      ]
+    },
+    "productGroupsSection": {
+      "_type": "sectionHeading",
+      "eyebrow": "Sản phẩm",
+      "title": "Tấm Fomex cho từng nhu cầu"
+    },
+    "applicationsSection": {
+      "_type": "sectionHeading",
+      "eyebrow": "Ứng dụng",
+      "title": "Một tấm vật liệu, nhiều thành phẩm",
+      "intro": "Tư vấn lựa chọn sản phẩm phù hợp từng hạng mục."
+    },
+    "partnerSection": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Hợp tác cùng phát triển",
+        "title": "Đồng hành cùng đối tác trên cả nước",
+        "intro": "Nguồn Fomex sản xuất trong nước giúp nhà phân phối, đại lý vật liệu và nhà thầu thi công theo chuỗi chủ động kế hoạch nhập hàng và tiến độ công trình."
+      },
+      "cta": {
+        "_type": "link",
+        "label": "Đăng ký hợp tác",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "partnershipPage"
+        },
+        "anchor": "dang-ky",
+        "newTab": false
+      }
+    },
+    "latestPosts": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Tin tức & kiến thức",
+        "title": "Chọn đúng tấm, gia công đúng cách"
+      },
+      "count": 3
+    },
+    "messageForm": {
+      "_type": "messageFormBlock",
+      "useDefault": true
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/",
+      "path": "/",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "leadForms",
+    "_type": "leadForms",
+    "messageFormDefault": {
+      "heading": "Bạn cần nguồn Fomex chất lượng",
+      "subheading": "Để lại thông tin Nhựa Win sẽ liên hệ tư vấn ngay"
+    },
+    "contact": {
+      "roleOptions": [
+        "Nhà phân phối",
+        "Đại lý vật liệu",
+        "Nhà thầu thi công",
+        "Xưởng in ấn & gia công",
+        "Khác"
+      ],
+      "needOptions": [
+        "Báo giá",
+        "Tư vấn quy cách",
+        "Thử mẫu",
+        "Hợp tác phân phối",
+        "Tham quan nhà máy"
+      ],
+      "notePlaceholder": "Số lượng dự kiến, độ dày, khu vực giao hàng",
+      "submitLabel": "Gửi yêu cầu tư vấn"
+    },
+    "quote": {
+      "heading": "Thông tin nhận báo giá",
+      "notePlaceholder": "Hạng mục, kích thước hoặc độ dày riêng",
+      "submitLabel": "Gửi yêu cầu báo giá"
+    },
+    "partnership": {
+      "heading": "Đăng ký hợp tác",
+      "submitLabel": "Gửi đăng ký hợp tác"
+    },
+    "successMessage": "Cảm ơn bạn! WIN đã nhận thông tin và sẽ liên hệ lại sớm.",
+    "errorMessage": "Chưa gửi được thông tin. Bạn vui lòng gọi {hotline} hoặc nhắn Zalo để WIN hỗ trợ ngay.",
+    "privacyNote": [
+      {
+        "_type": "block",
+        "_key": "s28",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s29",
+            "text": "Thông tin chỉ dùng để liên hệ tư vấn, báo giá.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "newsPage",
+    "_type": "newsPage",
+    "seo": {
+      "_type": "seo",
+      "title": "Tin tức & kiến thức Fomex | Nhựa WIN Việt Nam",
+      "description": "Tin hoạt động của Nhựa WIN Việt Nam và kinh nghiệm chọn, cắt, in, gia công tấm Fomex dành cho đại lý vật liệu, xưởng in và nhà thầu thi công.",
+      "noindex": false
+    },
+    "title": "Tin tức & kiến thức Fomex",
+    "intro": "Tin hoạt động của WIN và kinh nghiệm chọn, gia công tấm Fomex cho đại lý, xưởng in và nhà thầu thi công.",
+    "postsPerPage": 9,
+    "emptyText": "Chủ đề này chưa có bài viết.",
+    "articleCta": {
+      "heading": "Nhận báo giá tấm Fomex từ nhà máy",
+      "text": "Báo giá theo số lượng, tư vấn quy cách và thử mẫu cho đại lý, nhà thầu.",
+      "cta": {
+        "_type": "link",
+        "label": "Gửi yêu cầu báo giá",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "quotePage"
+        },
+        "newTab": false
+      }
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc",
+      "path": "/tin-tuc",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "notFoundPage",
+    "_type": "notFoundPage",
+    "title": "Không tìm thấy trang",
+    "text": "Trang bạn tìm có thể đã đổi địa chỉ hoặc không còn. Mời bạn xem các trang dưới đây.",
+    "links": [
+      {
+        "_type": "link",
+        "_key": "notFou1",
+        "label": "Trang chủ",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "homePage"
+        },
+        "newTab": false
+      },
+      {
+        "_type": "link",
+        "_key": "notFou2",
+        "label": "Sản phẩm",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "productsPage"
+        },
+        "newTab": false
+      },
+      {
+        "_type": "link",
+        "_key": "notFou3",
+        "label": "Nhận báo giá",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "quotePage"
+        },
+        "newTab": false
+      },
+      {
+        "_type": "link",
+        "_key": "notFou4",
+        "label": "Liên hệ",
+        "kind": "internal",
+        "internal": {
+          "_type": "reference",
+          "_ref": "contactPage"
+        },
+        "newTab": false
+      }
+    ]
+  },
+  {
+    "_id": "partnershipPage",
+    "_type": "partnershipPage",
+    "seo": {
+      "_type": "seo",
+      "title": "Hợp tác phân phối tấm Fomex | Nhựa WIN Việt Nam",
+      "description": "Trở thành nhà phân phối, đại lý tấm Fomex của Nhựa WIN Việt Nam: nguồn hàng sản xuất trong nước, giao hàng toàn quốc, hỗ trợ mẫu tấm và tư vấn kỹ thuật.",
+      "noindex": false
+    },
+    "title": "Trở thành đối tác phân phối tấm Fomex WIN",
+    "intro": "Làm việc trực tiếp với nhà máy WIN tại Hà Nội: 14 quy cách tấm Fomex 3 – 18 ly, tư vấn quy cách, gửi mẫu thử, báo giá theo số lượng và khu vực, giao hàng toàn quốc — cho nhà phân phối, đại lý vật liệu và nhà thầu thi công theo chuỗi.",
+    "heroImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1e262468202a3ded19905d92cd1615e86cf44de9-1200x670-webp"
+      },
+      "alt": "Khu xuất hàng nhà máy WIN: xe nâng đưa kiện tấm Fomex lên xe tải dưới biển logo WIN",
+      "source": "legacy_site"
+    },
+    "partnerGroups": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Đối tượng hợp tác",
+        "title": "Ba nhóm đối tác của WIN",
+        "intro": "Mỗi nhóm có cách nhập hàng và bán hàng khác nhau — WIN điều chỉnh cách tư vấn, báo giá và giao hàng theo từng nhóm, trao đổi trực tiếp với nhà máy."
+      },
+      "items": [
+        {
+          "_type": "featureItem",
+          "_key": "partne1",
+          "title": "Nhà phân phối",
+          "text": "Nhập hàng số lượng lớn trực tiếp từ nhà máy, chủ động kế hoạch phân phối theo khu vực.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "partne2",
+          "title": "Đại lý vật liệu",
+          "text": "Đại lý vật liệu quảng cáo, nội ngoại thất: đủ dải độ dày 3 – 18 ly, đóng kẹp sẵn để bán lẻ.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "partne3",
+          "title": "Nhà thầu theo chuỗi",
+          "text": "Đơn hàng theo dự án, giao theo đợt theo tiến độ công trình; tư vấn quy cách và thử mẫu trước khi chốt khối lượng.",
+          "verification": "confirmed"
+        }
+      ]
+    },
+    "growTogether": {
+      "eyebrow": "Hợp tác cùng phát triển",
+      "title": "Đồng hành cùng đối tác trên cả nước",
+      "intro": "Nguồn Fomex sản xuất trong nước giúp nhà phân phối, đại lý vật liệu và nhà thầu thi công theo chuỗi chủ động kế hoạch nhập hàng và tiến độ công trình.",
+      "benefits": [
+        {
+          "_type": "featureItem",
+          "_key": "partne4",
+          "title": "Chính sách hợp tác rõ ràng",
+          "text": "Riêng cho từng nhóm đối tác.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "partne5",
+          "title": "Nguồn hàng ổn định",
+          "text": "Đáp ứng đơn hàng số lượng lớn.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "partne6",
+          "title": "Giao hàng nhanh chóng",
+          "text": "Quy trình gọn, giao toàn quốc.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "partne7",
+          "title": "Xử lý phát sinh nhanh",
+          "text": "Đầu mối hỗ trợ từ nhà máy.",
+          "verification": "confirmed"
+        }
+      ],
+      "logisticsImage": {
+        "_type": "figure",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-30eb19aaa0852ead56c3b9a30fc6e16c03fd610d-1200x670-webp"
+        },
+        "alt": "Nhà máy Nhựa WIN Việt Nam: biển logo WIN, xe nâng và xe tải xếp kiện tấm Fomex",
+        "source": "legacy_site"
+      }
+    },
+    "processSteps": [
+      {
+        "_type": "processStep",
+        "_key": "partne8",
+        "title": "Gửi nhu cầu",
+        "text": "Loại hình, khu vực, sản lượng dự kiến."
+      },
+      {
+        "_type": "processStep",
+        "_key": "partne9",
+        "title": "Tư vấn & báo giá",
+        "text": "Quy cách, giá theo số lượng, gửi mẫu thử."
+      },
+      {
+        "_type": "processStep",
+        "_key": "partnea",
+        "title": "Thống nhất & đặt hàng",
+        "text": "Ký thỏa thuận, có thể tham quan nhà máy."
+      },
+      {
+        "_type": "processStep",
+        "_key": "partneb",
+        "title": "Giao hàng & hỗ trợ",
+        "text": "Giao toàn quốc, đầu mối hỗ trợ riêng."
+      }
+    ],
+    "registerCta": {
+      "_type": "link",
+      "label": "Đăng ký hợp tác",
+      "kind": "internal",
+      "internal": {
+        "_type": "reference",
+        "_ref": "partnershipPage"
+      },
+      "anchor": "dang-ky",
+      "newTab": false
+    },
+    "faq": {
+      "_type": "faq",
+      "title": "Câu hỏi về hợp tác",
+      "items": [
+        {
+          "_type": "faqItem",
+          "_key": "partnec",
+          "question": "Có được tham quan nhà máy trước khi hợp tác không?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s22",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s23",
+                  "text": "Có. Đối tác có thể đặt lịch tham quan dây chuyền và kho hàng tại Cụm công nghiệp Quất Động, Hà Nội; WIN xác nhận lịch qua điện thoại.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "partned",
+          "question": "WIN có gửi mẫu tấm để thử không?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s24",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s25",
+                  "text": "Có. Gửi hạng mục, hệ mực, decal và cách cắt đang dùng — WIN tư vấn quy cách và trao đổi phương án thử mẫu trước khi chốt đơn.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "partnee",
+          "question": "WIN giao hàng những khu vực nào?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s26",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s27",
+                  "text": "WIN cung ứng toàn quốc. Phí và lịch giao được báo cùng báo giá theo tỉnh/thành của đối tác.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/hop-tac",
+      "path": "/hop-tac",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "productsPage",
+    "_type": "productsPage",
+    "seo": {
+      "_type": "seo",
+      "title": "Tấm Fomex 3 – 18 ly | Nhựa WIN Việt Nam",
+      "description": "Bảng quy cách tấm Fomex WIN 3, 5, 8, 10, 15, 18 ly: độ dày thực tế 2,4–17 mm, khổ 1220 × 2440 mm, số tấm mỗi kẹp. Chọn độ dày theo ứng dụng.",
+      "noindex": false
+    },
+    "title": "Tấm Fomex WIN 3 – 18 ly",
+    "intro": "Bốn nhóm độ dày cho quảng cáo, sự kiện và nội ngoại thất — độ dày thực tế 2,4 – 17 mm, khổ 1220 × 2440 mm, sản xuất tại nhà máy WIN, Hà Nội và giao hàng toàn quốc.",
+    "heroImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d35cf150dcb6978646daea5a38dfd9b01c56783b-1200x670-webp"
+      },
+      "alt": "Chồng tấm Fomex trắng trên kệ gỗ dưới logo WIN trong phòng trưng bày",
+      "source": "legacy_site"
+    },
+    "groupsSection": {
+      "_type": "sectionHeading",
+      "title": "Chọn theo độ dày"
+    },
+    "specTableSection": {
+      "heading": {
+        "_type": "sectionHeading",
+        "title": "Bảng quy cách tấm Fomex WIN"
+      },
+      "footnote": "Linh hoạt kích thước và độ dày tấm theo yêu cầu"
+    },
+    "applicationsSection": {
+      "_type": "sectionHeading",
+      "eyebrow": "Ứng dụng",
+      "title": "Một tấm vật liệu, nhiều thành phẩm",
+      "intro": "Tư vấn lựa chọn sản phẩm phù hợp từng hạng mục."
+    },
+    "whyChoose": {
+      "heading": {
+        "_type": "sectionHeading",
+        "eyebrow": "Đặc tính chung",
+        "title": "Vì sao chọn tấm Fomex"
+      },
+      "items": [
+        {
+          "_type": "featureItem",
+          "_key": "produc1",
+          "title": "Nhẹ, dễ vận chuyển",
+          "text": "Cấu trúc bọt khí giúp tấm nhẹ hơn gỗ và MDF cùng độ dày, thuận tiện bốc xếp và thi công trên cao.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "produc2",
+          "title": "Không thấm nước",
+          "text": "Nhựa PVC không hút ẩm nên tấm không mục, không trương nở; dùng được ở khu vực ẩm và ngoài trời có mái che.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "produc3",
+          "title": "Bề mặt in đẹp",
+          "text": "Bề mặt trắng, phẳng, mịn cho màu in UV sắc nét; decal bám chắc, ít bong mép khi cắt chữ.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "produc4",
+          "title": "Dễ gia công",
+          "text": "Rọc dao với tấm mỏng; cưa, CNC, khoan, uốn nhiệt với tấm dày. Mép cắt gọn, chà nhám là mịn.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "produc5",
+          "title": "Thay thế gỗ, MDF",
+          "text": "Dùng thay gỗ dán, MDF cho tủ, kệ, vách ở khu vực ẩm; không cong vênh do nước, không mối mọt.",
+          "verification": "confirmed"
+        },
+        {
+          "_type": "featureItem",
+          "_key": "produc6",
+          "title": "Đóng kiện theo kẹp",
+          "text": "Mỗi loại đóng kẹp với số tấm cố định (2 – 15 tấm/kẹp) — dễ kiểm đếm khi nhận hàng và lưu kho.",
+          "verification": "confirmed"
+        }
+      ]
+    },
+    "chooseByUseSection": {
+      "_type": "sectionHeading",
+      "title": "Chọn độ dày theo hạng mục"
+    },
+    "chooseByUseRows": [
+      {
+        "_type": "useRow",
+        "_key": "produc7",
+        "use": "Cắt dán decal, biển bảng, chân quảng cáo",
+        "thickness": "3 ly",
+        "note": "Nhẹ, rọc dao được, tiết kiệm chi phí"
+      },
+      {
+        "_type": "useRow",
+        "_key": "produc8",
+        "use": "Decor sinh nhật, tiệc cưới, background",
+        "thickness": "3 – 5 ly",
+        "note": "3 ly cho mảng phụ, 5 ly cho mảng chính"
+      },
+      {
+        "_type": "useRow",
+        "_key": "produc9",
+        "use": "Decor trang trí, backdrop sự kiện",
+        "thickness": "5 – 10 ly",
+        "note": "Khung lớn nên dùng tấm dày hơn để giữ phẳng"
+      },
+      {
+        "_type": "useRow",
+        "_key": "produca",
+        "use": "Hashtag, bảng check-in cầm tay",
+        "thickness": "8 – 10 ly",
+        "note": "Đủ cứng khi cầm, mép cắt CNC gọn"
+      },
+      {
+        "_type": "useRow",
+        "_key": "producb",
+        "use": "Nội ngoại thất, tủ kệ, vách",
+        "thickness": "8 – 18 ly",
+        "note": "Bắt vít, dán cạnh như ván gỗ công nghiệp"
+      },
+      {
+        "_type": "useRow",
+        "_key": "producc",
+        "use": "Chân chữ, chữ nổi, logo",
+        "thickness": "15 – 18 ly",
+        "note": "Độ dày tạo chiều sâu cho chữ"
+      }
+    ],
+    "faq": {
+      "_type": "faq",
+      "title": "Câu hỏi thường gặp về tấm Fomex",
+      "items": [
+        {
+          "_type": "faqItem",
+          "_key": "producd",
+          "question": "Tấm Fomex là gì?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s0",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Tấm Fomex (PVC foam) là tấm nhựa PVC có cấu trúc bọt khí bên trong: nhẹ, bề mặt phẳng, dễ cắt và gia công — dùng nhiều trong quảng cáo, decor sự kiện và nội ngoại thất.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "produce",
+          "question": "“3 ly thiếu” và “3 ly đủ” khác nhau thế nào?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s3",
+                  "text": "“Ly” là tên gọi theo độ dày danh nghĩa; “thiếu” và “đủ” cho biết độ dày thực tế. Ví dụ Fomex 3 ly thiếu dày 2,4 mm, 3 ly đủ dày 2,7 mm. Bảng quy cách ghi độ dày thực tế của từng loại để bạn so sánh đúng khi đặt hàng.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "producf",
+          "question": "Khổ tấm tiêu chuẩn là bao nhiêu?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s4",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s5",
+                  "text": "Khổ tiêu chuẩn 1220 × 2440 mm cho mọi độ dày. WIN linh hoạt kích thước và độ dày tấm theo yêu cầu của đơn hàng.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "producg",
+          "question": "Một kẹp có bao nhiêu tấm?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s7",
+                  "text": "Tuỳ độ dày: 15 tấm/kẹp với 3 ly, 10 – 12 tấm/kẹp với 5 ly, 5 tấm/kẹp với 8 – 10 ly, 2 – 3 tấm/kẹp với 15 – 18 ly. Chi tiết từng loại có trong bảng quy cách.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "produch",
+          "question": "Tấm Fomex có chịu nước không?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s9",
+                  "text": "Tấm Fomex làm từ nhựa PVC nên chịu ẩm tốt, không mục mọt như gỗ. Với hạng mục ngoài trời, hãy trao đổi để được tư vấn độ dày và cách thi công phù hợp.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "produci",
+          "question": "Làm sao để nhận giá tấm Fomex?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s10",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s11",
+                  "text": "Giá thay đổi theo độ dày, số lượng và khu vực giao hàng. Chọn quy cách tại trang Nhận báo giá hoặc nhắn Zalo để được báo giá sỉ từ nhà máy.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "messageForm": {
+      "_type": "messageFormBlock",
+      "useDefault": true
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/san-pham",
+      "path": "/san-pham",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "quotePage",
+    "_type": "quotePage",
+    "seo": {
+      "_type": "seo",
+      "title": "Báo giá tấm Fomex | Nhựa WIN Việt Nam",
+      "description": "Nhận báo giá sỉ tấm Fomex 3–18 ly trực tiếp từ nhà máy Nhựa WIN Việt Nam: chọn độ dày, số lượng và khu vực giao hàng, WIN liên hệ tư vấn ngay.",
+      "noindex": false
+    },
+    "title": "Báo giá tấm Fomex theo độ dày & số lượng",
+    "intro": "Giá tấm Fomex thay đổi theo độ dày, số lượng và khu vực giao hàng. Chọn quy cách bên dưới — WIN báo giá sỉ trực tiếp từ nhà máy.",
+    "benefits": [
+      {
+        "_type": "featureItem",
+        "_key": "quoteP1",
+        "title": "Giá theo số lượng",
+        "text": "Đơn càng lớn, giá càng tốt.",
+        "verification": "confirmed"
+      },
+      {
+        "_type": "featureItem",
+        "_key": "quoteP2",
+        "title": "Phí & lịch giao dự kiến",
+        "text": "Về đúng tỉnh/thành của bạn.",
+        "verification": "confirmed"
+      },
+      {
+        "_type": "featureItem",
+        "_key": "quoteP3",
+        "title": "Chính sách đại lý",
+        "text": "Nếu bạn nhập hàng thường xuyên.",
+        "verification": "confirmed"
+      }
+    ],
+    "faq": {
+      "_type": "faq",
+      "title": "Hỏi đáp về giá tấm Fomex",
+      "items": [
+        {
+          "_type": "faqItem",
+          "_key": "quoteP4",
+          "question": "Giá tấm Fomex phụ thuộc vào những gì?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s13",
+                  "text": "Chủ yếu vào độ dày, số lượng đặt và khu vực giao hàng. Vì vậy WIN báo giá theo từng yêu cầu để chính xác nhất.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "quoteP5",
+          "question": "Mua số lượng lớn có giá tốt hơn không?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s15",
+                  "text": "Có. WIN báo giá theo số lượng; đối tác nhập hàng thường xuyên có thể áp dụng chính sách đại lý.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "_key": "quoteP6",
+          "question": "Có đặt được kích thước hoặc độ dày riêng không?",
+          "answer": [
+            {
+              "_type": "block",
+              "_key": "s16",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s17",
+                  "text": "Có. Khổ tiêu chuẩn 1220 × 2440 mm, WIN linh hoạt kích thước và độ dày tấm theo yêu cầu — ghi rõ trong phần ghi chú của form.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/bao-gia",
+      "path": "/bao-gia",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "redirectSettings",
+    "_type": "redirectSettings",
+    "rules": []
+  },
+  {
+    "_id": "siteSettings",
+    "_type": "siteSettings",
+    "siteName": "Nhựa WIN Việt Nam",
+    "legalName": "Công ty TNHH Nhựa WIN Việt Nam",
+    "tagline": "Fomex cho người Việt",
+    "areaServed": "Việt Nam",
+    "quickFacts": {
+      "what": "Sản xuất tấm Fomex (PVC foam) 3–18 ly, khổ 1220 × 2440 mm",
+      "forWhom": "Nhà phân phối, đại lý vật liệu, nhà thầu thi công, xưởng in"
+    },
+    "logoFull": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ad9b7405249286052df12016747c36960244116e-1440x701-png"
+      },
+      "alt": "Logo Nhựa WIN Việt Nam — Nhà sản xuất tấm Fomex",
+      "source": "legacy_site"
+    },
+    "phones": [
+      {
+        "_type": "phone",
+        "_key": "siteSe1",
+        "display": "0824 862 689",
+        "e164": "+84824862689",
+        "isPrimary": true
+      },
+      {
+        "_type": "phone",
+        "_key": "siteSe2",
+        "display": "0979 072 186",
+        "e164": "+84979072186",
+        "isPrimary": false
+      }
+    ],
+    "email": "nhuawinvietnam@gmail.com",
+    "address": {
+      "display": "Cụm công nghiệp Quất Động, xã Thượng Phúc, Hà Nội",
+      "streetAddress": "Cụm công nghiệp Quất Động",
+      "ward": "xã Thượng Phúc",
+      "city": "Hà Nội",
+      "country": "VN"
+    },
+    "googleMapsUrl": "https://maps.app.goo.gl/7VgHcAP3EXp4rP7T6",
+    "geo": {
+      "_type": "geopoint",
+      "lat": 20.841295,
+      "lng": 105.8699602
+    },
+    "openingHours": [
+      {
+        "_type": "openingHoursRow",
+        "_key": "siteSe3",
+        "days": [
+          "Mo",
+          "Tu",
+          "We",
+          "Th",
+          "Fr",
+          "Sa"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "_type": "openingHoursRow",
+        "_key": "siteSe4",
+        "days": [
+          "Su"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "_key": "siteSe5",
+        "platform": "zalo",
+        "url": "https://zalo.me/0824862689",
+        "label": "Nhắn Zalo",
+        "confirmed": false
+      },
+      {
+        "_type": "socialLink",
+        "_key": "siteSe6",
+        "platform": "facebook",
+        "url": "https://www.facebook.com/profile.php?id=61591527334082",
+        "label": "Fanpage Fomex WIN Việt Nam",
+        "confirmed": false
+      }
+    ],
+    "floatingContact": {
+      "enabled": true,
+      "showCall": true,
+      "showZalo": true,
+      "showFacebook": true
+    },
+    "seoDefaults": {
+      "defaultDescription": "Tấm Fomex 3–18 ly sản xuất tại nhà máy WIN, Hà Nội. Cung ứng toàn quốc cho nhà phân phối, đại lý vật liệu quảng cáo, nội ngoại thất và nhà thầu thi công.",
+      "defaultOgImage": {
+        "_type": "figure",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-23e65a0f6cef0e899a533a113448c23d81dab99b-1200x630-png"
+        },
+        "alt": "Nhựa WIN Việt Nam — Nhà sản xuất tấm Fomex",
+        "source": "legacy_site"
+      }
+    }
+  },
+  {
+    "_id": "category-chon-gia-cong",
+    "_type": "category",
+    "title": "Chọn & gia công",
+    "slug": {
+      "_type": "slug",
+      "current": "chon-gia-cong"
+    },
+    "description": "Hướng dẫn chọn độ dày và gia công tấm Fomex: cắt, phay CNC, in UV, dán decal, lắp đặt ngoài trời — kinh nghiệm thực tế từ nhà máy Nhựa WIN.",
+    "order": 3,
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc?chu-de=chon-gia-cong",
+      "path": "/tin-tuc?chu-de=chon-gia-cong",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "category-danh-cho-dai-ly",
+    "_type": "category",
+    "title": "Dành cho đại lý",
+    "slug": {
+      "_type": "slug",
+      "current": "danh-cho-dai-ly"
+    },
+    "description": "Kinh nghiệm cho đại lý vật liệu quảng cáo: nhập tấm Fomex số lượng lớn, cơ cấu độ dày tồn kho, kiểm hàng, lưu kho và làm việc với nhà máy WIN.",
+    "order": 4,
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc?chu-de=danh-cho-dai-ly",
+      "path": "/tin-tuc?chu-de=danh-cho-dai-ly",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "category-kien-thuc-vat-lieu",
+    "_type": "category",
+    "title": "Kiến thức vật liệu",
+    "slug": {
+      "_type": "slug",
+      "current": "kien-thuc-vat-lieu"
+    },
+    "description": "Kiến thức về tấm Fomex (PVC foam): cấu tạo, đặc tính, độ dày danh nghĩa và thực tế, cách dùng trong quảng cáo, sự kiện, nội thất — từ Nhựa WIN.",
+    "order": 1,
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc?chu-de=kien-thuc-vat-lieu",
+      "path": "/tin-tuc?chu-de=kien-thuc-vat-lieu",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "category-tin-win",
+    "_type": "category",
+    "title": "Tin WIN",
+    "slug": {
+      "_type": "slug",
+      "current": "tin-win"
+    },
+    "description": "Tin hoạt động của Công ty TNHH Nhựa WIN Việt Nam, nhà máy sản xuất tấm Fomex 3–18 ly tại Cụm công nghiệp Quất Động, Hà Nội, và hoạt động cùng đối tác.",
+    "order": 2,
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc?chu-de=tin-win",
+      "path": "/tin-tuc?chu-de=tin-win",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "productGroup-fomex-15-18-ly",
+    "_type": "productGroup",
+    "title": "Fomex 15 – 18 ly",
+    "slug": {
+      "_type": "slug",
+      "current": "fomex-15-18-ly"
+    },
+    "order": 4,
+    "nominalLabel": "15 – 18 ly",
+    "actualRangeMm": {
+      "min": 13.5,
+      "max": 17
+    },
+    "sheetsPerBundle": "2–3 tấm/kẹp",
+    "description": "Cắt chân chữ, chữ nổi, logo tạo khối và hạng mục nội thất.",
+    "badge": "Dày lớn",
+    "image": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4dd1d888e6e7900e6b64c159ff83a904ae31d709-1200x896-webp"
+      },
+      "alt": "Khối tấm Fomex dày xếp chồng",
+      "source": "legacy_site"
+    },
+    "specs": [
+      {
+        "_type": "specRow",
+        "_key": "pgfome1",
+        "label": "Fomex 15 ly",
+        "grade": "khac",
+        "actualThicknessMm": 13.5,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "3 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome2",
+        "label": "Fomex 15 ly",
+        "grade": "khac",
+        "actualThicknessMm": 14,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "3 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome3",
+        "label": "Fomex 18 ly",
+        "grade": "khac",
+        "actualThicknessMm": 16.5,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "2 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome4",
+        "label": "Fomex 18 ly",
+        "grade": "khac",
+        "actualThicknessMm": 17,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "2 tấm/kẹp"
+      }
+    ],
+    "quoteCtaLabel": "Báo giá Fomex 15 – 18 ly"
+  },
+  {
+    "_id": "productGroup-fomex-3-ly",
+    "_type": "productGroup",
+    "title": "Fomex 3 ly",
+    "slug": {
+      "_type": "slug",
+      "current": "fomex-3-ly"
+    },
+    "order": 1,
+    "nominalLabel": "3 ly",
+    "actualRangeMm": {
+      "min": 2.4,
+      "max": 2.7
+    },
+    "sheetsPerBundle": "15 tấm/kẹp",
+    "description": "Nhẹ, dễ cắt — decor sinh nhật, tiệc cưới, background, biển bảng, chân quảng cáo, cắt dán decal.",
+    "badge": "Phổ biến",
+    "image": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9d48e10acfbf7c9156819625884ef380bf6c4a52-1200x896-webp"
+      },
+      "alt": "Tấm Fomex 3 ly uốn cong, thể hiện độ dẻo của tấm mỏng",
+      "source": "legacy_site"
+    },
+    "specs": [
+      {
+        "_type": "specRow",
+        "_key": "pgfome1",
+        "label": "Fomex 3 ly thiếu",
+        "grade": "thieu",
+        "actualThicknessMm": 2.4,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "15 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome2",
+        "label": "Fomex 3 ly đủ",
+        "grade": "du",
+        "actualThicknessMm": 2.7,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "15 tấm/kẹp"
+      }
+    ],
+    "quoteCtaLabel": "Báo giá Fomex 3 ly"
+  },
+  {
+    "_id": "productGroup-fomex-5-ly",
+    "_type": "productGroup",
+    "title": "Fomex 5 ly",
+    "slug": {
+      "_type": "slug",
+      "current": "fomex-5-ly"
+    },
+    "order": 2,
+    "nominalLabel": "5 ly",
+    "actualRangeMm": {
+      "min": 3.8,
+      "max": 4.7
+    },
+    "sheetsPerBundle": "10–12 tấm/kẹp",
+    "description": "Cứng cáp hơn, giữ phẳng tốt — phù hợp hạng mục decor trang trí.",
+    "badge": "Linh hoạt",
+    "image": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-078b1f543d5a6e986a6cae8649bb5f81ecd40bc4-1200x896-webp"
+      },
+      "alt": "Chồng tấm Fomex mỏng trắng, mép cắt gọn",
+      "source": "legacy_site"
+    },
+    "specs": [
+      {
+        "_type": "specRow",
+        "_key": "pgfome1",
+        "label": "Fomex 5 ly thiếu",
+        "grade": "thieu",
+        "actualThicknessMm": 3.8,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "12 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome2",
+        "label": "Fomex 5 ly thiếu",
+        "grade": "thieu",
+        "actualThicknessMm": 4,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "12 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome3",
+        "label": "Fomex 5 ly thiếu dày",
+        "grade": "thieu",
+        "actualThicknessMm": 4.2,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "10 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome4",
+        "label": "Fomex 5 ly đủ",
+        "grade": "du",
+        "actualThicknessMm": 4.7,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "10 tấm/kẹp"
+      }
+    ],
+    "quoteCtaLabel": "Báo giá Fomex 5 ly"
+  },
+  {
+    "_id": "productGroup-fomex-8-10-ly",
+    "_type": "productGroup",
+    "title": "Fomex 8 – 10 ly",
+    "slug": {
+      "_type": "slug",
+      "current": "fomex-8-10-ly"
+    },
+    "order": 3,
+    "nominalLabel": "8 – 10 ly",
+    "actualRangeMm": {
+      "min": 7,
+      "max": 9.5
+    },
+    "sheetsPerBundle": "5 tấm/kẹp",
+    "description": "Chịu lực tốt — hashtag, bảng check-in cầm tay, đồ nội thất.",
+    "badge": "Chịu lực",
+    "image": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-32f69b85cb79813e807617c7f6caf5ecd668abd0-1200x896-webp"
+      },
+      "alt": "Chồng tấm Fomex độ dày trung bình",
+      "source": "legacy_site"
+    },
+    "specs": [
+      {
+        "_type": "specRow",
+        "_key": "pgfome1",
+        "label": "Fomex 8 ly",
+        "grade": "khac",
+        "actualThicknessMm": 7,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "5 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome2",
+        "label": "Fomex 8 ly đủ",
+        "grade": "du",
+        "actualThicknessMm": 7.6,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "5 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome3",
+        "label": "Fomex 10 ly thiếu",
+        "grade": "thieu",
+        "actualThicknessMm": 8.5,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "5 tấm/kẹp"
+      },
+      {
+        "_type": "specRow",
+        "_key": "pgfome4",
+        "label": "Fomex 10 ly đủ",
+        "grade": "du",
+        "actualThicknessMm": 9.5,
+        "sizeMm": "1220 × 2440 mm",
+        "sheetsPerBundle": "5 tấm/kẹp"
+      }
+    ],
+    "quoteCtaLabel": "Báo giá Fomex 8 – 10 ly"
+  },
+  {
+    "_id": "application-backdrop-sinh-nhat",
+    "_type": "application",
+    "title": "Backdrop sinh nhật",
+    "slug": {
+      "_type": "slug",
+      "current": "backdrop-sinh-nhat"
+    },
+    "order": 4,
+    "thicknessHint": "Gợi ý 3 – 5 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "apback1",
+        "_ref": "productGroup-fomex-3-ly"
+      },
+      {
+        "_type": "reference",
+        "_key": "apback2",
+        "_ref": "productGroup-fomex-5-ly"
+      }
+    ],
+    "summary": "Nhẹ, dễ cắt theo hình, in UV hoặc dán decal trực tiếp. Tấm 3 ly cho mảng phụ, 5 ly cho mảng chính để giữ phẳng.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9d4d60d913fe230fe0895fa61b379b98aa37ecb1-1200x896-webp"
+      },
+      "alt": "Backdrop sinh nhật từ tấm Fomex cắt hình mây và vòm, bóng bay màu pastel",
+      "caption": "Backdrop vòm và mây ghép từ tấm Fomex trắng",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "apback3",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-9d4d60d913fe230fe0895fa61b379b98aa37ecb1-1200x896-webp"
+        },
+        "alt": "Backdrop sinh nhật từ tấm Fomex cắt hình mây và vòm, bóng bay màu pastel",
+        "caption": "Backdrop vòm và mây ghép từ tấm Fomex trắng",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apback4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-cf5f380f6aac6f0cd7b83675ec8fe7d70dfd53f2-1200x896-webp"
+        },
+        "alt": "Thợ lắp khung đỡ phía sau tấm backdrop sinh nhật bằng Fomex",
+        "caption": "Lắp khung đỡ phía sau tấm vòm tại địa điểm tiệc",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apback5",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-a4a6b56d56f64bbc234fc14db4cabd5046308b4f-1200x896-webp"
+        },
+        "alt": "Cận cảnh mép cong cắt CNC của tấm vòm và mảng mây bằng Fomex trắng",
+        "caption": "Mép cong cắt gọn, các lớp mây ghép chồng nổi khối",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "application-backdrop-su-kien",
+    "_type": "application",
+    "title": "Backdrop sự kiện",
+    "slug": {
+      "_type": "slug",
+      "current": "backdrop-su-kien"
+    },
+    "order": 5,
+    "thicknessHint": "Gợi ý 3 – 10 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "apback1",
+        "_ref": "productGroup-fomex-3-ly"
+      },
+      {
+        "_type": "reference",
+        "_key": "apback2",
+        "_ref": "productGroup-fomex-5-ly"
+      },
+      {
+        "_type": "reference",
+        "_key": "apback3",
+        "_ref": "productGroup-fomex-8-10-ly"
+      }
+    ],
+    "summary": "Khung lớn nên dùng tấm dày hơn để giữ phẳng; bề mặt in UV, dán decal tốt, lắp ráp nhanh tại sự kiện.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7762ad726586f1475b8d797fd5ce0352c77c475d-1200x896-webp"
+      },
+      "alt": "Backdrop sân khấu hội trường ghép từ các tấm Fomex in hoạ tiết sóng xanh",
+      "caption": "Backdrop sân khấu ghép từ nhiều tấm in",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "apback4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-7762ad726586f1475b8d797fd5ce0352c77c475d-1200x896-webp"
+        },
+        "alt": "Backdrop sân khấu hội trường ghép từ các tấm Fomex in hoạ tiết sóng xanh",
+        "caption": "Backdrop sân khấu ghép từ nhiều tấm in",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apback5",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-f81111e33e59cc8fb918ef3e4014807ca4c1adc8-1200x896-webp"
+        },
+        "alt": "Thợ lắp các tấm Fomex in hoạ tiết sóng lên khung sân khấu hội trường",
+        "caption": "Lắp các tấm in sẵn lên khung sân khấu",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apback6",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-0821102ecd77b52d6c0f8573ead733a08a5e7e1e-1200x896-webp"
+        },
+        "alt": "Mối ghép thẳng giữa hai tấm Fomex in, hoạ tiết sóng liền mạch",
+        "caption": "Mối ghép thẳng, hoạ tiết in liền mạch giữa hai tấm",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "application-bang-quang-cao-in-uv",
+    "_type": "application",
+    "title": "Bảng quảng cáo, in UV",
+    "slug": {
+      "_type": "slug",
+      "current": "bang-quang-cao-in-uv"
+    },
+    "order": 1,
+    "thicknessHint": "3 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "apbang1",
+        "_ref": "productGroup-fomex-3-ly"
+      }
+    ],
+    "summary": "Bề mặt trắng, phẳng, mịn cho màu in UV sắc nét. Tấm 3 ly nhẹ, rọc dao được — làm biển bảng, chân quảng cáo, bảng trưng bày trong nhà.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8382235db78f9693373671aa0ef8b0193e2c6de3-1200x896-webp"
+      },
+      "alt": "Máy in UV phẳng in hoạ tiết hình học nhiều màu trực tiếp lên tấm Fomex",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "apbang2",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-8382235db78f9693373671aa0ef8b0193e2c6de3-1200x896-webp"
+        },
+        "alt": "Máy in UV phẳng in hoạ tiết hình học nhiều màu trực tiếp lên tấm Fomex",
+        "caption": "In UV phẳng trực tiếp lên tấm Fomex trắng",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apbang3",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-5f10b46457842e52cf4a2a4794eba103ce1bcf10-1200x896-webp"
+        },
+        "alt": "Tấm Fomex in UV hoạ tiết hình học đặt trên giá trưng bày",
+        "caption": "Tấm in hoàn thiện, phẳng, không cong vênh",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apbang4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-83cd8e7006687868fea6daf143107cae93e6fff3-1200x896-webp"
+        },
+        "alt": "Cận cảnh góc cắt tấm Fomex in UV: lõi trắng đặc và lớp mực màu trên bề mặt",
+        "caption": "Góc cắt vuông, lõi đặc; lớp mực bám trên bề mặt mịn",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "application-cat-dan-decal",
+    "_type": "application",
+    "title": "Cắt dán decal",
+    "slug": {
+      "_type": "slug",
+      "current": "cat-dan-decal"
+    },
+    "order": 6,
+    "thicknessHint": "Gợi ý 3 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "apcatd1",
+        "_ref": "productGroup-fomex-3-ly"
+      }
+    ],
+    "summary": "Bề mặt mịn giúp decal bám chắc, ít bong mép khi cắt chữ; tấm 3 ly rọc dao được, tiết kiệm chi phí.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a62ca71cdd12825e90e251413ecd310f23e0819b-1200x896-webp"
+      },
+      "alt": "Dán decal hoạ tiết sóng lên bề mặt tấm Fomex bằng gạt nỉ",
+      "caption": "Dán decal lên bề mặt tấm Fomex bằng gạt nỉ",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "apcatd2",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-a62ca71cdd12825e90e251413ecd310f23e0819b-1200x896-webp"
+        },
+        "alt": "Dán decal hoạ tiết sóng lên bề mặt tấm Fomex bằng gạt nỉ",
+        "caption": "Dán decal lên bề mặt tấm Fomex bằng gạt nỉ",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apcatd3",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-102f37e7c44f048d51c871da7ea0522b30cada91-1200x896-webp"
+        },
+        "alt": "Bóc lớp giấy lót decal màu dán trên tấm Fomex trắng ở bàn gia công",
+        "caption": "Bóc lớp lót decal — bề mặt mịn giúp decal bám chắc",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apcatd4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-f33306144c3229f4d62875b27eb3aaf0207eb2ed-1200x896-webp"
+        },
+        "alt": "Tấm Fomex trắng dán decal hình sóng và hình tròn màu xanh, cam",
+        "caption": "Tấm hoàn thiện với decal màu cắt theo hình",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "application-chu-noi-logo-khoi",
+    "_type": "application",
+    "title": "Chữ nổi, logo khối",
+    "slug": {
+      "_type": "slug",
+      "current": "chu-noi-logo-khoi"
+    },
+    "order": 2,
+    "thicknessHint": "15 – 18 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "apchun1",
+        "_ref": "productGroup-fomex-15-18-ly"
+      }
+    ],
+    "summary": "Độ dày tạo chiều sâu cho chữ: cắt chân chữ, chữ nổi, logo tạo khối bằng CNC; mép cắt gọn, chà nhám là mịn.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5af63b0a23baea312210743f9caa8aa195bf1649-1200x896-webp"
+      },
+      "alt": "Các khối hình tròn, vòm bậc, lục giác cắt từ tấm Fomex dày, mặt dán màu xanh",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "apchun2",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-5af63b0a23baea312210743f9caa8aa195bf1649-1200x896-webp"
+        },
+        "alt": "Các khối hình tròn, vòm bậc, lục giác cắt từ tấm Fomex dày, mặt dán màu xanh",
+        "caption": "Khối hình cắt từ tấm dày, mặt dán màu, đứng vững không cần đế",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apchun3",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-4a6baa01c39a773e126ef6a3a5ae4bc15675d237-1200x896-webp"
+        },
+        "alt": "Máy CNC cắt các khối hình tròn, vòm, đa giác từ tấm Fomex trắng",
+        "caption": "Cắt CNC theo đường viền trên tấm Fomex trắng",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apchun4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-533a80273a103165e2fda95fb96f331c34d0604e-1200x896-webp"
+        },
+        "alt": "Cận cảnh cạnh cắt CNC của khối hình Fomex dày mặt dán màu xanh",
+        "caption": "Cạnh cắt vuông, lõi đặc tạo chiều sâu cho khối",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "application-hashtag-check-in",
+    "_type": "application",
+    "title": "Hashtag check-in",
+    "slug": {
+      "_type": "slug",
+      "current": "hashtag-check-in"
+    },
+    "order": 7,
+    "thicknessHint": "Gợi ý 8 – 10 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "aphash1",
+        "_ref": "productGroup-fomex-8-10-ly"
+      }
+    ],
+    "summary": "Đủ cứng khi cầm, mép cắt CNC gọn — làm hashtag, bảng check-in cầm tay cho sự kiện.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-52c0d0e64077001ad15c857f504679fbb18aad10-1200x896-webp"
+      },
+      "alt": "Khách cầm hashtag check-in cắt từ tấm Fomex tại sự kiện",
+      "caption": "Hashtag check-in cầm tay tại sự kiện",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "aphash2",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-52c0d0e64077001ad15c857f504679fbb18aad10-1200x896-webp"
+        },
+        "alt": "Khách cầm hashtag check-in cắt từ tấm Fomex tại sự kiện",
+        "caption": "Hashtag check-in cầm tay tại sự kiện",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "aphash3",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-61eacfa138e5aa8976ff77e0e6444b265a333c93-1200x896-webp"
+        },
+        "alt": "Bộ hashtag, trái tim, ngôi sao cầm tay cắt từ tấm Fomex ở quầy check-in sự kiện",
+        "caption": "Bộ đạo cụ check-in cắt hình, in hoạ tiết màu",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "aphash4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-0efae1759c08adf762c8fc796e39b44c06b4da6b-1200x896-webp"
+        },
+        "alt": "Cận cảnh hashtag cắt CNC từ tấm Fomex, mép cắt vuông gọn",
+        "caption": "Mép cắt CNC vuông gọn, lõi đặc",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "application-noi-that-vach-trang-tri",
+    "_type": "application",
+    "title": "Nội thất, vách trang trí",
+    "slug": {
+      "_type": "slug",
+      "current": "noi-that-vach-trang-tri"
+    },
+    "order": 3,
+    "thicknessHint": "8 – 18 ly",
+    "recommendedGroups": [
+      {
+        "_type": "reference",
+        "_key": "apnoit1",
+        "_ref": "productGroup-fomex-8-10-ly"
+      },
+      {
+        "_type": "reference",
+        "_key": "apnoit2",
+        "_ref": "productGroup-fomex-15-18-ly"
+      }
+    ],
+    "summary": "Bắt vít, dán cạnh như ván gỗ công nghiệp; không trương nở do nước, không mối mọt — dùng cho tủ, kệ, vách và trần trang trí cắt CNC.",
+    "cardImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f6d343eb232e33e59579260a1f680fb9ad83f475-1200x670-webp"
+      },
+      "alt": "Vách trang trí và trần cắt CNC từ tấm Fomex trong không gian nội thất",
+      "source": "legacy_site"
+    },
+    "album": [
+      {
+        "_type": "figure",
+        "_key": "apnoit3",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-f6d343eb232e33e59579260a1f680fb9ad83f475-1200x670-webp"
+        },
+        "alt": "Vách trang trí và trần cắt CNC từ tấm Fomex trong không gian nội thất",
+        "caption": "Vách và trần trang trí cắt CNC từ tấm Fomex",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apnoit4",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-cf77e03bc5a425c9ff9759b79bdc3faecaf08d76-1200x896-webp"
+        },
+        "alt": "Vách ngăn hoa văn hình học cắt CNC từ tấm Fomex trắng ở sảnh văn phòng",
+        "caption": "Vách ngăn hoa văn hình học ở sảnh văn phòng",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apnoit5",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-afafb3d0b9457aeb239936497f9df88d58d0b18c-1200x896-webp"
+        },
+        "alt": "Cận cảnh vách hoa văn cắt CNC từ tấm Fomex và chân đỡ ở sảnh văn phòng",
+        "caption": "Đường cắt CNC sắc gọn, liên kết chân đỡ kín đáo",
+        "source": "legacy_site"
+      },
+      {
+        "_type": "figure",
+        "_key": "apnoit6",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-e20bec6313ad8d042def73721a28ee008cc97a8a-1200x896-webp"
+        },
+        "alt": "Máy CNC phay hoa văn hình học trên tấm Fomex dày",
+        "caption": "Phay hoa văn trên tấm Fomex dày bằng máy CNC",
+        "source": "legacy_site"
+      }
+    ]
+  },
+  {
+    "_id": "post-cach-cat-va-gia-cong-tam-fomex",
+    "_type": "post",
+    "title": "Cắt và gia công tấm Fomex gọn mép, không vỡ cạnh",
+    "slug": {
+      "_type": "slug",
+      "current": "cach-cat-va-gia-cong-tam-fomex"
+    },
+    "publishedAt": "2026-08-11T00:00:00+07:00",
+    "category": {
+      "_type": "reference",
+      "_ref": "category-chon-gia-cong"
+    },
+    "excerpt": "Chọn dụng cụ theo độ dày, thao tác rọc dao, cắt CNC, laser, cưa bàn đúng cách và hoàn thiện mép cắt — kèm lưu ý an toàn khi gia công.",
+    "mainImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e20bec6313ad8d042def73721a28ee008cc97a8a-1200x896-webp"
+      },
+      "alt": "Máy CNC phay hoa văn hình học trên tấm Fomex dày",
+      "source": "legacy_site"
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k5m",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5l",
+            "text": "Fomex dễ cắt hơn gỗ và mica, nhưng chọn sai dụng cụ hoặc thao tác vội vẫn làm mép tấm sứt, sần hoặc cháy. Nguyên tắc chung: dụng cụ phải sắc, tốc độ cắt đều và phương pháp phù hợp với độ dày.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k5o",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5n",
+            "text": "Chọn dụng cụ theo độ dày",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "table",
+        "_key": "k5u",
+        "rows": [
+          {
+            "_type": "tableRow",
+            "_key": "k5p",
+            "cells": [
+              "Độ dày",
+              "Dụng cụ phù hợp",
+              "Lưu ý"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5q",
+            "cells": [
+              "3 – 5 ly",
+              "Dao rọc giấy, dao cắt chuyên dụng",
+              "Rạch nhiều lượt nhẹ rồi bẻ"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5r",
+            "cells": [
+              "5 – 10 ly",
+              "CNC, cưa bàn, cưa lọng",
+              "Lưỡi cưa răng mịn"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5s",
+            "cells": [
+              "15 – 18 ly",
+              "CNC, cưa bàn trượt",
+              "Cắt 2 lượt với tấm dày"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5t",
+            "cells": [
+              "Chi tiết nhỏ, chữ",
+              "CNC hoặc laser",
+              "Laser giảm công suất, tăng tốc độ"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k5w",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5v",
+            "text": "Rọc dao với tấm mỏng",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k5y",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5x",
+            "text": "Kê tấm trên mặt bàn phẳng, đánh dấu đường cắt bằng bút chì hoặc bút lông dầu.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k60",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5z",
+            "text": "Đặt thước kim loại dọc đường cắt, giữ chắc thước.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k62",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k61",
+            "text": "Rạch nhẹ 2 – 3 lượt theo thước — không cố cắt đứt ngay từ lượt đầu.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k64",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k63",
+            "text": "Đưa đường rạch ra mép bàn và bẻ nhẹ dứt khoát; rọc nốt lớp mặt còn lại nếu cần.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k66",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k65",
+            "text": "CNC, laser và cưa bàn",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k69",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k67",
+            "text": "CNC:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k68",
+            "text": " dùng dao phay một me cho nhựa, cố định tấm bằng bàn hút chân không hoặc kẹp; tốc độ chạy dao đều để phoi thoát tốt, mép không chảy.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k6c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6a",
+            "text": "Laser:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k6b",
+            "text": " phù hợp chi tiết nhỏ trên tấm mỏng; giảm công suất, tăng tốc độ để mép không cháy vàng, làm việc ở nơi có hút khói.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k6f",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6d",
+            "text": "Cưa bàn, cưa lọng:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k6e",
+            "text": " chọn lưỡi răng mịn, đẩy tấm với tốc độ ổn định, không ép nhanh để tránh răng cưa mép cắt.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k6h",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6g",
+            "text": "Hoàn thiện sau khi cắt",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6j",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6i",
+            "text": "Chà mép bằng giấy nhám mịn hoặc máy mài để loại bỏ phần sần.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k6l",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6k",
+            "text": "Ghép tấm bằng keo dán PVC chuyên dụng; ép giữ đến khi keo khô.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k6n",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6m",
+            "text": "Hoàn thiện bằng sơn phủ, in UV, dán decal hoặc dán nẹp cạnh.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k6r",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6o",
+            "text": "An toàn khi gia công",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k6q",
+            "text": "\n",
+            "marks": []
+          },
+          {
+            "_type": "span",
+            "_key": "k6p",
+            "text": "Đeo kính bảo hộ và khẩu trang khi cắt, chà nhám. Khi cắt CNC, laser, làm việc ở nơi thông thoáng hoặc có hệ thống hút bụi, hút khói.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "relatedPosts": [],
+    "seo": {
+      "_type": "seo",
+      "title": "Cắt, gia công tấm Fomex không vỡ cạnh",
+      "description": "Cách cắt tấm Fomex không vỡ mép: chọn dụng cụ theo độ dày (dao rọc, CNC, laser, cưa bàn), thao tác từng bước, hoàn thiện cạnh và lưu ý an toàn.",
+      "noindex": false
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc/cach-cat-va-gia-cong-tam-fomex",
+      "path": "/tin-tuc/cach-cat-va-gia-cong-tam-fomex",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "post-cach-chon-do-day-tam-fomex",
+    "_type": "post",
+    "title": "Cách chọn độ dày tấm Fomex cho từng hạng mục",
+    "slug": {
+      "_type": "slug",
+      "current": "cach-chon-do-day-tam-fomex"
+    },
+    "publishedAt": "2026-09-22T00:00:00+07:00",
+    "category": {
+      "_type": "reference",
+      "_ref": "category-chon-gia-cong"
+    },
+    "excerpt": "Độ dày quyết định độ cứng, trọng lượng, cách gia công và giá thành. Bảng chọn nhanh theo hạng mục và ba yếu tố cần cân nhắc trước khi đặt hàng.",
+    "mainImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-635b7e2844f51cb30f8b28d58c08f134737b6839-1200x896-webp"
+      },
+      "alt": "Mặt cắt các tấm Fomex nhiều độ dày xếp cạnh nhau",
+      "source": "legacy_site"
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k0",
+            "text": "Cùng là tấm Fomex nhưng tấm 3 ly và tấm 18 ly phục vụ hai nhóm việc hoàn toàn khác nhau. Chọn mỏng quá thì mảng in bị võng, cầm bị oằn; chọn dày quá thì nặng, khó cắt và đội chi phí. Bài viết tóm tắt cách WIN tư vấn độ dày cho khách hàng theo từng hạng mục.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2",
+            "text": "Độ dày danh nghĩa và độ dày thực tế",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k5",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4",
+            "text": "Thị trường gọi Fomex theo “ly” (3 ly, 5 ly…), đó là độ dày danh nghĩa. Độ dày thực tế của tấm có thể thấp hơn và được phân biệt bằng “thiếu”, “đủ” — ví dụ ở WIN, Fomex 3 ly thiếu dày 2,4 mm, 3 ly đủ dày 2,7 mm. Khi so sánh báo giá giữa các nhà cung cấp, hãy so theo độ dày thực tế, không chỉ theo tên gọi.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k8",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6",
+            "text": "Đo độ dày:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k7",
+            "text": " dùng thước kẹp đo ở 4 góc và giữa tấm, lấy giá trị trung bình.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "kb",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k9",
+            "text": "Cân thử:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "ka",
+            "text": " cân một tấm nguyên khổ; cùng độ dày, tấm nặng hơn thường cứng hơn và mặt in đẹp hơn.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "ke",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kc",
+            "text": "Hỏi rõ loại tấm:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "kd",
+            "text": " nói rõ “5 ly thiếu 3,8 mm” hay “5 ly đủ 4,7 mm” để chữ cắt CNC, chi tiết lắp ghép khớp nhau.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "kg",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kf",
+            "text": "Bảng chọn nhanh theo hạng mục",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "table",
+        "_key": "ko",
+        "rows": [
+          {
+            "_type": "tableRow",
+            "_key": "kh",
+            "cells": [
+              "Hạng mục",
+              "Độ dày gợi ý",
+              "Ghi chú"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "ki",
+            "cells": [
+              "Cắt dán decal, biển bảng, chân quảng cáo",
+              "3 ly",
+              "Nhẹ, rọc dao được, tiết kiệm chi phí"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "kj",
+            "cells": [
+              "Decor sinh nhật, tiệc cưới, background",
+              "3 – 5 ly",
+              "3 ly cho mảng phụ, 5 ly cho mảng chính"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "kk",
+            "cells": [
+              "Decor trang trí, backdrop sự kiện",
+              "5 – 10 ly",
+              "Khung lớn nên dùng tấm dày hơn để giữ phẳng"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "kl",
+            "cells": [
+              "Hashtag, bảng check-in cầm tay",
+              "8 – 10 ly",
+              "Đủ cứng khi cầm, mép cắt CNC gọn"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "km",
+            "cells": [
+              "Nội ngoại thất, tủ kệ, vách",
+              "8 – 18 ly",
+              "Bắt vít, dán cạnh như ván gỗ công nghiệp"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "kn",
+            "cells": [
+              "Chân chữ, chữ nổi, logo",
+              "15 – 18 ly",
+              "Độ dày tạo chiều sâu cho chữ"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kq",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kp",
+            "text": "Ba yếu tố quyết định độ dày",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kt",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kr",
+            "text": "Kích thước mảng và khung đỡ:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "ks",
+            "text": " mảng càng lớn, khung càng thưa thì tấm càng phải dày để giữ phẳng. Backdrop có thanh khung dày dùng Fomex 5 ly là đủ; khung thưa nên lên 8 ly.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "kw",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "ku",
+            "text": "Môi trường và thời gian sử dụng:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "kv",
+            "text": " hạng mục trong nhà, ngắn ngày dùng tấm mỏng; biển ngoài trời dùng lâu nên chọn từ 5 ly trở lên để chịu gió, nắng.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "kz",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kx",
+            "text": "Cách gia công:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "ky",
+            "text": " tấm 3 – 5 ly rọc dao được; tấm dày hơn cần CNC, cưa bàn — tính cả chi phí gia công khi chọn độ dày.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k11",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k10",
+            "text": "Sai lầm thường gặp",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k13",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k12",
+            "text": "Dùng tấm mỏng cho mảng backdrop lớn không có khung đỡ — tấm võng, mặt in gợn sóng dưới đèn.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k15",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k14",
+            "text": "Dùng tấm dày cho chữ cắt decal đơn giản — tăng trọng lượng, tăng chi phí mà không thêm giá trị.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k17",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k16",
+            "text": "So giá theo “ly” mà không kiểm tra độ dày thực tế.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1b",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k18",
+            "text": "Chưa chắc nên chọn độ dày nào?",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k1a",
+            "text": "\n",
+            "marks": []
+          },
+          {
+            "_type": "span",
+            "_key": "k19",
+            "text": "Gửi kích thước, cách lắp và thời gian sử dụng của hạng mục — WIN gợi ý độ dày phù hợp và hỗ trợ thử mẫu trước khi đặt hàng số lượng lớn.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "relatedPosts": [],
+    "seo": {
+      "_type": "seo",
+      "title": "Chọn độ dày tấm Fomex cho từng hạng mục",
+      "description": "Hướng dẫn chọn độ dày tấm Fomex 3 – 18 ly cho decal, backdrop, hashtag, biển quảng cáo, nội thất và chữ nổi. Phân biệt độ dày danh nghĩa (ly) và độ dày thực tế.",
+      "noindex": false
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc/cach-chon-do-day-tam-fomex",
+      "path": "/tin-tuc/cach-chon-do-day-tam-fomex",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "post-dung-tam-fomex-ngoai-troi",
+    "_type": "post",
+    "title": "Dùng tấm Fomex ngoài trời: chọn tấm, lắp đặt và bảo quản",
+    "slug": {
+      "_type": "slug",
+      "current": "dung-tam-fomex-ngoai-troi"
+    },
+    "publishedAt": "2026-07-28T00:00:00+07:00",
+    "category": {
+      "_type": "reference",
+      "_ref": "category-chon-gia-cong"
+    },
+    "excerpt": "Biển và hạng mục ngoài trời cần tấm đủ dày, bản in bền nắng và cách lắp chịu gió. Những lưu ý để công trình Fomex ngoài trời bền đẹp.",
+    "mainImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cb2298097e2815ff5fe43101ea526f8e27b87f76-1200x670-webp"
+      },
+      "alt": "Sân nhà máy WIN, kiện tấm Fomex chờ xuất hàng",
+      "source": "legacy_site"
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k6t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6s",
+            "text": "Fomex không thấm nước nên dùng được cho nhiều hạng mục ngoài trời. Tuy vậy nắng, gió và chênh lệch nhiệt độ ngày đêm là thử thách lớn hơn nhiều so với trong nhà — chọn tấm và lắp đặt đúng cách quyết định công trình bền được bao lâu.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6v",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6u",
+            "text": "Chọn độ dày",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6x",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6w",
+            "text": "Biển quảng cáo và hạng mục ngoài trời nên dùng tấm từ 5 ly trở lên. Tấm dày cứng hơn, chịu gió tốt hơn và ít võng khi nhiệt độ thay đổi. Mảng lớn hoặc vị trí lộng gió nên dùng 8 – 10 ly và có khung đỡ.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6z",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6y",
+            "text": "In và bảo vệ bề mặt",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k71",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k70",
+            "text": "Ưu tiên in UV: mực bám tốt, hình ảnh sắc nét và giữ màu lâu hơn dưới nắng.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k73",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k72",
+            "text": "Có thể phủ thêm lớp bảo vệ chống UV để hạn chế phai màu và ngả màu bề mặt.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k75",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k74",
+            "text": "Với decal, chọn loại decal ngoài trời và dán vòng qua cạnh tấm để mép không bong khi mưa.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k77",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k76",
+            "text": "Lắp đặt chịu gió",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k78",
+            "text": "Khung đỡ:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k79",
+            "text": " dùng khung sắt hộp hoặc nhôm, khoảng cách thanh khung dày hơn so với lắp trong nhà.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7b",
+            "text": "Liên kết:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k7c",
+            "text": " bắt vít qua lỗ khoan mồi kèm long đen, hoặc keo chịu lực ngoài trời — kết hợp cả hai với mảng lớn.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7g",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7e",
+            "text": "Khe giãn nở:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k7f",
+            "text": " chừa khe nhỏ giữa các tấm và khoan lỗ vít rộng hơn thân vít một chút để tấm giãn nở khi trời nắng.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7j",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7h",
+            "text": "Thoát nước:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k7i",
+            "text": " không để nước đọng trên cạnh trên của biển; bo kín mép trên bằng nẹp hoặc silicone.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7l",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7k",
+            "text": "Vệ sinh và kiểm tra định kỳ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7n",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7m",
+            "text": "Lau bề mặt bằng khăn mềm và dung dịch tẩy rửa nhẹ; tránh chất tẩy mạnh làm mờ màu, ăn mòn bề mặt.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7p",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7o",
+            "text": "Kiểm tra định kỳ vít, keo và khung sau mùa mưa bão để phát hiện sớm chỗ lỏng, bong.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7r",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7q",
+            "text": "Thay tấm khi bề mặt in đã phai nhiều — chi phí thấp hơn nhiều so với sửa chữa khung.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k7v",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7s",
+            "text": "Tư vấn cho công trình ngoài trời",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k7u",
+            "text": "\n",
+            "marks": []
+          },
+          {
+            "_type": "span",
+            "_key": "k7t",
+            "text": "Gửi kích thước biển, vị trí lắp và thời gian sử dụng mong muốn — WIN tư vấn độ dày và cách lắp phù hợp.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "relatedPosts": [],
+    "seo": {
+      "_type": "seo",
+      "title": "Dùng tấm Fomex ngoài trời đúng cách",
+      "description": "Lưu ý khi dùng tấm Fomex cho biển quảng cáo và công trình ngoài trời: chọn độ dày từ 5 ly, in UV, lắp đặt chịu gió, khe giãn nở, vệ sinh và kiểm tra định kỳ.",
+      "noindex": false
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc/dung-tam-fomex-ngoai-troi",
+      "path": "/tin-tuc/dung-tam-fomex-ngoai-troi",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "post-in-uv-va-dan-decal-len-tam-fomex",
+    "_type": "post",
+    "title": "Kinh nghiệm in UV và dán decal lên tấm Fomex",
+    "slug": {
+      "_type": "slug",
+      "current": "in-uv-va-dan-decal-len-tam-fomex"
+    },
+    "publishedAt": "2026-09-15T00:00:00+07:00",
+    "category": {
+      "_type": "reference",
+      "_ref": "category-chon-gia-cong"
+    },
+    "excerpt": "Chuẩn bị bề mặt, thiết lập máy in UV, quy trình dán decal không bọt khí và bảng xử lý các lỗi hay gặp khi in trên Fomex.",
+    "mainImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8382235db78f9693373671aa0ef8b0193e2c6de3-1200x896-webp"
+      },
+      "alt": "Máy in UV phẳng in hoạ tiết hình học nhiều màu trực tiếp lên tấm Fomex",
+      "source": "legacy_site"
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k1d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1c",
+            "text": "Bề mặt trắng, phẳng và mịn là lý do Fomex trở thành vật liệu nền quen thuộc của xưởng in quảng cáo. Để bản in sắc nét và bền màu, khâu chuẩn bị tấm và thao tác in, dán quan trọng không kém chất lượng tấm.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1f",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1e",
+            "text": "Chuẩn bị bề mặt",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1h",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1g",
+            "text": "Để tấm trong xưởng in vài giờ cho cân bằng nhiệt độ trước khi in, nhất là tấm vừa chuyển từ kho nóng hoặc lạnh.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1j",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1i",
+            "text": "Lau sạch bụi bằng khăn mềm, hơi ẩm; với bụi tĩnh điện có thể lau nhẹ bằng cồn loãng rồi để khô.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1l",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1k",
+            "text": "Không chạm tay trần lên mặt in — dầu trên tay làm mực UV và keo decal bám kém.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1n",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1m",
+            "text": "Xếp tấm nằm phẳng; không in lên tấm đang bị cong do dựng đứng lâu ngày.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1p",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1o",
+            "text": "In UV trực tiếp",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1s",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1q",
+            "text": "Chiều cao đầu phun:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k1r",
+            "text": " đặt theo độ dày thực tế của tấm (vd 2,4 mm hay 2,7 mm), không theo tên gọi “3 ly”, để tránh quệt đầu phun.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1v",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1t",
+            "text": "Lớp lót trắng:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k1u",
+            "text": " nền Fomex đã trắng nên thường không cần in lót, trừ khi cần độ phủ màu đặc biệt.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k1y",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1w",
+            "text": "Sấy đèn:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k1x",
+            "text": " kiểm tra công suất đèn UV; mực chưa khô hoàn toàn sẽ bong khi cào hoặc khi dán băng keo.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k21",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1z",
+            "text": "In thử:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k20",
+            "text": " chạy thử trên một mẩu tấm cùng lô trước khi in cả đơn để chỉnh màu và chế độ in.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k23",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k22",
+            "text": "Với hạng mục ngoài trời, in UV cho màu bền hơn dưới nắng so với nhiều phương pháp khác; có thể phủ thêm lớp bóng hoặc mờ để tăng độ bền.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k25",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k24",
+            "text": "Quy trình dán decal",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k27",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k26",
+            "text": "Cắt decal dư mỗi cạnh 1 – 2 cm so với tấm.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k29",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k28",
+            "text": "Bóc một đầu giấy đế khoảng 5 – 10 cm, căn thẳng cạnh rồi dán cố định đầu này.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k2b",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2a",
+            "text": "Vừa rút giấy đế vừa gạt từ giữa ra hai bên, lực gạt đều tay.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k2d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2c",
+            "text": "Bọt khí còn sót: dùng kim châm một lỗ nhỏ rồi miết phẳng.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k2f",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2e",
+            "text": "Rọc decal thừa sát cạnh tấm bằng dao sắc, lưỡi nghiêng theo cạnh.",
+            "marks": []
+          }
+        ],
+        "listItem": "number",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k2h",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2g",
+            "text": "Lỗi thường gặp và cách xử lý",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "table",
+        "_key": "k2n",
+        "rows": [
+          {
+            "_type": "tableRow",
+            "_key": "k2i",
+            "cells": [
+              "Hiện tượng",
+              "Nguyên nhân thường gặp",
+              "Cách xử lý"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k2j",
+            "cells": [
+              "Mực bong khi cào",
+              "Bụi, dầu tay trên bề mặt; đèn UV yếu",
+              "Vệ sinh tấm trước khi in; kiểm tra đèn sấy"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k2k",
+            "cells": [
+              "Bọt khí dưới decal",
+              "Gạt không đều, gạt từ mép vào",
+              "Gạt từ giữa ra; dán ướt với mảng lớn"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k2l",
+            "cells": [
+              "Mép decal bong",
+              "Rọc quá sát, mép tấm còn bụi",
+              "Lau sạch cạnh; dán vòng qua cạnh tấm"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k2m",
+            "cells": [
+              "Màu nền lệch giữa các tấm",
+              "Tấm khác lô sản xuất",
+              "Đặt cùng một lô cho một công trình"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2r",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2o",
+            "text": "Mẹo đặt hàng",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k2q",
+            "text": "\n",
+            "marks": []
+          },
+          {
+            "_type": "span",
+            "_key": "k2p",
+            "text": "Với công trình nhiều tấm ghép, hãy đặt toàn bộ số tấm trong cùng một lô sản xuất để nền trắng đồng đều giữa các mảng.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "relatedPosts": [],
+    "seo": {
+      "_type": "seo",
+      "title": "In UV và dán decal lên tấm Fomex",
+      "description": "Kinh nghiệm in UV trực tiếp và dán decal lên tấm Fomex: chuẩn bị bề mặt, thiết lập máy in, dán decal không bọt khí, xử lý lỗi mực bong và mép decal.",
+      "noindex": false
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc/in-uv-va-dan-decal-len-tam-fomex",
+      "path": "/tin-tuc/in-uv-va-dan-decal-len-tam-fomex",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "post-nhap-fomex-so-luong-lon-cho-dai-ly",
+    "_type": "post",
+    "title": "Kinh nghiệm nhập Fomex số lượng lớn cho đại lý vật liệu",
+    "slug": {
+      "_type": "slug",
+      "current": "nhap-fomex-so-luong-lon-cho-dai-ly"
+    },
+    "publishedAt": "2026-09-08T00:00:00+07:00",
+    "category": {
+      "_type": "reference",
+      "_ref": "category-danh-cho-dai-ly"
+    },
+    "excerpt": "Cơ cấu độ dày tồn kho, tiêu chí kiểm hàng khi nhận, cách lưu kho để tấm không cong vênh và cách làm việc với nhà máy để chủ động nguồn hàng.",
+    "mainImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c66e6c5b7c0ecfd85488dc247e68684b774e48d1-1200x670-webp"
+      },
+      "alt": "Đoàn xe tải chở tấm Fomex xuất xưởng",
+      "source": "legacy_site"
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k2t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2s",
+            "text": "Với đại lý vật liệu quảng cáo, Fomex là mặt hàng xoay vòng nhanh nhưng chiếm nhiều diện tích kho. Nhập đúng cơ cấu, kiểm hàng kỹ và lưu kho đúng cách giúp giảm hàng tồn, hạn chế hàng lỗi và giữ uy tín với xưởng in.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2v",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2u",
+            "text": "Cơ cấu độ dày tồn kho",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2y",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2w",
+            "text": "Fomex 3 ly:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k2x",
+            "text": " nhóm bán nhanh nhất, phục vụ decal, biển bảng, decor sự kiện — nên luôn có hàng sẵn.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k31",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2z",
+            "text": "Fomex 5 ly:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k30",
+            "text": " phục vụ backdrop, decor; nhu cầu tăng mạnh theo mùa cưới, khai trương, cuối năm.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k34",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k32",
+            "text": "Fomex 8 – 18 ly:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k33",
+            "text": " chủ yếu theo đơn nội thất, chữ nổi — nhập theo dự án hoặc giữ tồn ở mức tối thiểu.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k36",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k35",
+            "text": "Tiêu chí kiểm hàng khi nhận",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k38",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k37",
+            "text": "Độ dày thực tế: đo bằng thước kẹp ở 4 góc và giữa tấm, đối chiếu với độ dày của từng loại trong bảng quy cách.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k39",
+            "text": "Số tấm mỗi kẹp: đếm theo quy cách đóng kẹp — ví dụ 15 tấm/kẹp với Fomex 3 ly, 5 tấm/kẹp với 8 – 10 ly.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3b",
+            "text": "Khổ tấm và độ vuông góc: đo hai đường chéo, chênh lệch nhỏ là tấm cắt vuông.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3e",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3d",
+            "text": "Bề mặt: phẳng, không rỗ, không sọc, không ố vàng; hai mặt đồng màu.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3g",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3f",
+            "text": "Đóng kẹp: góc kẹp không móp, màng lót bề mặt còn nguyên.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3i",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3h",
+            "text": "Lưu kho đúng cách",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3k",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3j",
+            "text": "Kê tấm nằm phẳng trên pallet; không dựng đứng hoặc gác nghiêng lâu ngày.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3m",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3l",
+            "text": "Tránh nắng chiếu trực tiếp và nguồn nhiệt như mái tôn nóng, đèn công suất lớn.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3o",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3n",
+            "text": "Xếp theo loại tấm và lô sản xuất; xuất trước những lô nhập trước.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3q",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3p",
+            "text": "Giữ nguyên lớp lót bề mặt đến khi giao cho xưởng in để tránh trầy xước.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3s",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3r",
+            "text": "Làm việc với nhà máy",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3v",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3t",
+            "text": "Lập kế hoạch theo mùa:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k3u",
+            "text": " chốt sản lượng trước các đợt cao điểm để nhà máy chủ động lịch sản xuất.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k3y",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3w",
+            "text": "Thống nhất quy cách:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k3x",
+            "text": " đặt hàng theo tên loại và độ dày thực tế (vd 5 ly thiếu 3,8 mm hay 5 ly đủ 4,7 mm) — tránh hiểu nhầm khi chỉ nói “5 ly”.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k41",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3z",
+            "text": "Một đầu mối:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k40",
+            "text": " có người phụ trách tại nhà máy để xử lý nhanh khi có phát sinh về giao nhận, chất lượng.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k45",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k42",
+            "text": "Chính sách cho đại lý",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k44",
+            "text": "\n",
+            "marks": []
+          },
+          {
+            "_type": "span",
+            "_key": "k43",
+            "text": "WIN có chính sách hợp tác riêng cho nhà phân phối và đại lý vật liệu, nguồn hàng sản xuất trong nước, giao hàng toàn quốc. Gửi nhu cầu để nhận báo giá theo sản lượng.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "relatedPosts": [],
+    "seo": {
+      "_type": "seo",
+      "title": "Nhập Fomex số lượng lớn cho đại lý",
+      "description": "Kinh nghiệm nhập tấm Fomex số lượng lớn cho đại lý vật liệu quảng cáo: cơ cấu độ dày tồn kho, kiểm hàng theo kẹp, lưu kho và lập kế hoạch nhập hàng với nhà máy.",
+      "noindex": false
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc/nhap-fomex-so-luong-lon-cho-dai-ly",
+      "path": "/tin-tuc/nhap-fomex-so-luong-lon-cho-dai-ly",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  },
+  {
+    "_id": "post-tam-fomex-la-gi",
+    "_type": "post",
+    "title": "Tấm Fomex là gì? Cấu tạo, đặc tính và ứng dụng",
+    "slug": {
+      "_type": "slug",
+      "current": "tam-fomex-la-gi"
+    },
+    "publishedAt": "2026-08-25T00:00:00+07:00",
+    "category": {
+      "_type": "reference",
+      "_ref": "category-kien-thuc-vat-lieu"
+    },
+    "excerpt": "Fomex là tên gọi phổ biến của tấm nhựa PVC foam — nhẹ, không thấm nước, dễ in, dễ gia công. Tìm hiểu cấu tạo, ưu điểm, giới hạn và các ứng dụng chính.",
+    "mainImage": {
+      "_type": "figure",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8a7a329a2c3d38bbe759b9094d26b98ccdfe89f0-1200x896-webp"
+      },
+      "alt": "Bộ mẫu tấm Fomex WIN theo độ dày",
+      "source": "legacy_site"
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k47",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k46",
+            "text": "Fomex là cách gọi quen thuộc ở Việt Nam của tấm nhựa PVC foam (còn gọi là tấm nhựa bọt, ván nhựa Formex). Nhờ nhẹ, không thấm nước và dễ in, Fomex được dùng rộng rãi trong quảng cáo, trang trí sự kiện và ngày càng nhiều trong nội thất thay cho gỗ, MDF.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k49",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k48",
+            "text": "Cấu tạo",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4b",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4a",
+            "text": "Tấm được đùn từ hỗn hợp nhựa PVC, chất tạo bọt và phụ gia ổn định. Trong quá trình đùn, chất tạo bọt tạo ra các bọt khí li ti bên trong lõi; hai mặt tấm được làm nguội và cán phẳng thành bề mặt nhẵn, mịn. Cấu trúc này giúp tấm nhẹ mà vẫn cứng.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4d",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4c",
+            "text": "Đặc tính nổi bật",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4g",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4e",
+            "text": "Nhẹ:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k4f",
+            "text": " nhẹ hơn gỗ và MDF cùng độ dày, thuận tiện vận chuyển, thi công trên cao.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4j",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4h",
+            "text": "Không thấm nước:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k4i",
+            "text": " không mục, không trương nở khi gặp ẩm; không bị mối mọt.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4m",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4k",
+            "text": "Bề mặt in đẹp:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k4l",
+            "text": " nền trắng phẳng cho bản in UV sắc nét, decal bám chắc.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4p",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4n",
+            "text": "Dễ gia công:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k4o",
+            "text": " cắt, khoan, phay CNC, uốn nhiệt, dán keo, bắt vít.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4r",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4q",
+            "text": "Giới hạn cần biết",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4s",
+            "text": "Nhựa PVC mềm dần khi gặp nhiệt độ cao — không lắp sát nguồn nhiệt, bóng đèn công suất lớn.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4v",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4u",
+            "text": "Dùng ngoài trời lâu dài dưới nắng gắt, bề mặt có thể ngả màu theo thời gian; nên in UV, phủ bảo vệ và chọn tấm dày.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4x",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4w",
+            "text": "Chịu tải thấp hơn gỗ đặc cùng độ dày — kệ, mặt bàn nhịp dài cần thêm thanh đỡ.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k4z",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4y",
+            "text": "Ứng dụng phổ biến",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k52",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k50",
+            "text": "Quảng cáo:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k51",
+            "text": " biển bảng, standee, chân quảng cáo, chữ nổi, logo.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k55",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k53",
+            "text": "Sự kiện:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k54",
+            "text": " backdrop sinh nhật, tiệc cưới, khai trương; hashtag, bảng check-in.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k58",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k56",
+            "text": "Nội ngoại thất:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k57",
+            "text": " tủ bếp, tủ lavabo, vách ngăn, ốp tường, kệ trang trí.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k5b",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k59",
+            "text": "Mô hình:",
+            "marks": [
+              "strong"
+            ]
+          },
+          {
+            "_type": "span",
+            "_key": "k5a",
+            "text": " sa bàn kiến trúc, mô hình trưng bày, đạo cụ sân khấu.",
+            "marks": []
+          }
+        ],
+        "listItem": "bullet",
+        "level": 1
+      },
+      {
+        "_type": "block",
+        "_key": "k5d",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5c",
+            "text": "Quy cách tấm Fomex WIN",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "table",
+        "_key": "k5k",
+        "rows": [
+          {
+            "_type": "tableRow",
+            "_key": "k5e",
+            "cells": [
+              "Thông số",
+              "Giá trị"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5f",
+            "cells": [
+              "Nguyên liệu",
+              "Nhựa PVC, chất tạo bọt và phụ gia ổn định"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5g",
+            "cells": [
+              "Độ dày",
+              "3 – 18 ly (thực tế 2,4 – 17 mm), 14 loại"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5h",
+            "cells": [
+              "Kích thước tấm",
+              "1220 × 2440 mm — linh hoạt kích thước và độ dày theo yêu cầu"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5i",
+            "cells": [
+              "Đóng kiện",
+              "2 – 15 tấm/kẹp tuỳ độ dày"
+            ]
+          },
+          {
+            "_type": "tableRow",
+            "_key": "k5j",
+            "cells": [
+              "Màu sắc",
+              "Trắng"
+            ]
+          }
+        ]
+      }
+    ],
+    "relatedPosts": [],
+    "seo": {
+      "_type": "seo",
+      "title": "Tấm Fomex là gì? Cấu tạo và ứng dụng",
+      "description": "Tấm Fomex (tấm nhựa PVC foam) là gì? Cấu tạo, đặc tính, ưu nhược điểm và ứng dụng trong quảng cáo, sự kiện, nội thất. Quy cách tấm Fomex WIN 3 – 18 ly.",
+      "noindex": false
+    },
+    "legacy": {
+      "_type": "legacyId",
+      "url": "https://www.nhuawinvietnam.com.vn/tin-tuc/tam-fomex-la-gi",
+      "path": "/tin-tuc/tam-fomex-la-gi",
+      "crawledAt": "2026-11-13T17:10:41+07:00"
+    }
+  }
+]
