@@ -193,10 +193,11 @@ export function Breadcrumbs({ items }: { items: { name: string; path?: string }[
     <nav aria-label="Đường dẫn" className="text-sm">
       <ol className="flex flex-wrap gap-x-2 text-surface/80">
         {all.map((c, i) => (
-          <li key={c.name} className="flex gap-2">
+          <li key={c.name} className="flex items-center gap-2">
             {i > 0 && <span aria-hidden="true">/</span>}
             {c.path && i < all.length - 1 ? (
-              <Link href={c.path} className="hover:text-surface">
+              // Vùng chạm ≥ 44 px ở mobile (MB-05: breadcrumb).
+              <Link href={c.path} className="inline-flex items-center hover:text-surface max-md:min-h-11">
                 {c.name}
               </Link>
             ) : (

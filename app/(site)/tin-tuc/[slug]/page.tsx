@@ -90,13 +90,14 @@ export default async function ArticlePage({ params }: Props) {
             <RichText value={post.body} className="max-w-prose text-body" />
             <aside className="space-y-4 lg:sticky lg:top-[calc(var(--header-h)+1.5rem)] lg:self-start">
               <p className="text-xs font-bold uppercase tracking-label text-brand-ink">Sản phẩm liên quan</p>
-              <ul className="grid gap-2 text-sm">
+              <ul className="grid gap-2 text-sm max-md:gap-0">
                 {groups.map((g) => (
-                  <li key={g.slug}>
-                    <a href={`/san-pham#${g.slug}`} className="font-semibold text-ink hover:text-brand-ink">
+                  // Vùng chạm ≥ 44 px ở mobile (MB-05).
+                  <li key={g.slug} className="flex flex-wrap items-center gap-x-2">
+                    <a href={`/san-pham#${g.slug}`} className="inline-flex items-center font-semibold text-ink hover:text-brand-ink max-md:min-h-11">
                       {g.title}
                     </a>
-                    <a href={quoteHref(g.slug)} className="ml-2 text-brand-ink underline underline-offset-2">
+                    <a href={quoteHref(g.slug)} className="inline-flex items-center text-brand-ink underline underline-offset-2 max-md:min-h-11">
                       Báo giá
                     </a>
                   </li>
