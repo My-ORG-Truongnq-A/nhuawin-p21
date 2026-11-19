@@ -1,6 +1,6 @@
 import "server-only";
 import type { Attribution } from "./attribution";
-import { deliverLead } from "./deliver";
+import { deliverLead, isDryRun } from "./deliver";
 import type { Env, Lead } from "./lead";
 import { type KvStore, doneKey, rateLimitKey, takeToken } from "./rate-limit";
 import { type FieldErrors, LEAD_KINDS, type LeadKind, type LeadOptions, parseLead } from "./schema";
@@ -14,6 +14,8 @@ export type LeadState = {
   /** Chỉ có khi lead đã giao — client dùng để bắn `generate_lead` đúng 1 lần (TR-02). */
   requestId?: string;
   formType?: LeadKind;
+  /** Dry-run (preview / QA): lead KHÔNG được gửi — form hiện dòng "Bản demo" (LD-01). Tắt dry-run thì không có. */
+  demo?: true;
 };
 
 export type LeadContext = {
@@ -32,6 +34,13 @@ export type LeadContext = {
 export const RATE_LIMIT = { limit: 5, windowSec: 10 * 60 };
 const DONE_TTL = 24 * 60 * 60;
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/**
+ * Request đang xử lý theo requestId (trong tiến trình): 2 request cùng requestId tới gần như cùng lúc
+ * (nhấp đúp, gửi lại khi mạng chập chờn) dùng chung một lần giao. Chỉ là lớp phụ —
+ * khoá bền liên tiến trình vẫn là `doneKey` trong KV; khoá nút ở client là lớp chính.
+ */
+const inFlight = new Map<string, Promise<LeadState>>();
 
 async function alreadyDone(store: KvStore | null, id: string): Promise<boolean> {
   if (!store) return false;
@@ -62,7 +71,24 @@ export async function handleLead(form: FormData, ctx: LeadContext): Promise<Lead
 
   const rid = String(form.get("$rid") ?? "");
   const requestId = UUID.test(rid) ? rid.toLowerCase() : ctx.newId();
+  const running = inFlight.get(requestId);
+  if (running) return running;
+  const job = deliverOnce(form, ctx, { kind, requestId, values, fields: parsed.data });
+  inFlight.set(requestId, job);
+  try {
+    return await job;
+  } finally {
+    inFlight.delete(requestId);
+  }
+}
+
+async function deliverOnce(
+  form: FormData,
+  ctx: LeadContext,
+  { kind, requestId, values, fields }: { kind: LeadKind; requestId: string; values: Record<string, string>; fields: Lead["fields"] },
+): Promise<LeadState> {
   const success: LeadState = { status: "success", message: ctx.messages.success, requestId, formType: kind };
+  if (isDryRun(ctx.env)) success.demo = true;
 
   // Gửi lại đúng request đã giao (mạng chập chờn, bấm 2 lần) → trả lại thành công, không gửi lần hai.
   if (await alreadyDone(ctx.store, requestId)) return success;
@@ -75,7 +101,7 @@ export async function handleLead(form: FormData, ctx: LeadContext): Promise<Lead
   const lead: Lead = {
     requestId,
     kind,
-    fields: parsed.data,
+    fields,
     page,
     pageUrl: new URL(page, ctx.siteUrl).toString(),
     attribution: ctx.attribution,
