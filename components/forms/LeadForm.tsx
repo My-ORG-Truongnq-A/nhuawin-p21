@@ -28,6 +28,8 @@ type Props = {
 const INITIAL: LeadState = { status: "idle" };
 
 const INVALID_MSG = "Vui lòng kiểm tra các ô được đánh dấu.";
+/** Hiện khi server trả `demo: true` (dry-run) — tự mất khi tắt dry-run (LD-01). */
+export const DEMO_NOTE = "Bản demo — thông tin chưa được gửi tới doanh nghiệp";
 
 /**
  * Form lead (T5.3, REQ-04; LD-03, LD-04, TR-02):
@@ -35,7 +37,10 @@ const INVALID_MSG = "Vui lòng kiểm tra các ô được đánh dấu.";
  *   `action` vẫn gắn trên <form> để form chạy khi chưa có JS (server trả `values`);
  * - kiểm trước ở client bằng cùng schema zod (nạp lười), lỗi cạnh trường, focus ô lỗi đầu tiên;
  * - honeypot `website` + `$elapsed` (thời gian điền) + `$rid` (requestId, idempotent khi gửi lại);
- * - thành công (server đã giao lead) → thông báo tại chỗ (aria-live) + `generate_lead` đúng 1 lần.
+ * - thành công (server đã giao lead) → thông báo tại chỗ (aria-live) + `generate_lead` đúng 1 lần;
+ *   dry-run (`demo: true`) → thêm dòng "Bản demo" dưới thông báo;
+ * - khoá gửi đồng bộ (ref) ngay khi bấm: nhấp đúp chỉ tạo 1 request (LD-01) — `pending` của
+ *   useActionState chỉ bật sau khi nạp schema xong nên không đủ để chặn.
  */
 export function LeadForm(p: Props) {
   const [state, action, pending] = useActionState(submitLead, INITIAL);
@@ -45,13 +50,22 @@ export function LeadForm(p: Props) {
   const statusRef = useRef<HTMLDivElement>(null);
   const mountedAt = useRef(0);
   const requestId = useRef<string | undefined>(undefined);
+  /** Khoá gửi = state tại lúc bấm; server trả state mới → tự mở khoá (lỗi thì gửi lại được). */
+  const lockedFor = useRef<LeadState | null>(null);
+  const [sendingFor, setSendingFor] = useState<LeadState | null>(null);
   const uid = useId();
   const id = (n: string) => `${uid}-${n}`;
   const v = state.values ?? {};
   const err = clientErrors ?? state.errors ?? {};
   const message = clientErrors ? INVALID_MSG : state.status === "error" ? state.message : undefined;
   const success = state.status === "success";
+  const busy = pending || sendingFor === state;
   const dark = p.tone === "dark";
+
+  const unlock = () => {
+    lockedFor.current = null;
+    setSendingFor(null);
+  };
 
   useEffect(() => {
     mountedAt.current = performance.now();
@@ -78,7 +92,9 @@ export function LeadForm(p: Props) {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (pending) return;
+    if (pending || lockedFor.current === state) return;
+    lockedFor.current = state;
+    setSendingFor(state);
     const fd = new FormData(e.currentTarget);
     requestId.current ??= globalThis.crypto?.randomUUID?.();
     if (requestId.current) fd.set("$rid", requestId.current);
@@ -90,8 +106,10 @@ export function LeadForm(p: Props) {
     loadSchema()
       .then(({ parseLead }) => {
         const r = parseLead(p.kind, fd, options);
-        if (!r.ok && !r.spam) setClientErrors(r.errors);
-        else send();
+        if (!r.ok && !r.spam) {
+          setClientErrors(r.errors);
+          unlock();
+        } else send();
       })
       // Không tải được schema → để server kiểm.
       .catch(send);
@@ -146,9 +164,14 @@ export function LeadForm(p: Props) {
         className={success ? `rounded-card p-6 text-base font-semibold ${dark ? "bg-surface/10 text-surface" : "bg-brand-100 text-ink"}` : undefined}
       >
         {success ? state.message : null}
+        {success && state.demo && (
+          <p data-demo-note className={`mt-2 text-sm font-normal ${dark ? "text-surface/80" : "text-muted"}`}>
+            {DEMO_NOTE}
+          </p>
+        )}
       </div>
       {!success && (
-        <form ref={formRef} action={action} onSubmit={onSubmit} noValidate className="grid gap-5" aria-busy={pending}>
+        <form ref={formRef} action={action} onSubmit={onSubmit} noValidate className="grid gap-5" aria-busy={busy}>
           <input type="hidden" name="$kind" value={p.kind} />
           <input type="hidden" name="$page" value={p.page} />
           {/* Honeypot: người thật không thấy, không tab tới. */}
@@ -220,10 +243,11 @@ export function LeadForm(p: Props) {
           <div className="flex flex-wrap items-center gap-4">
             <button
               type="submit"
-              disabled={pending}
+              disabled={busy}
+              aria-disabled={busy}
               className="inline-flex min-h-12 items-center justify-center rounded-pill bg-brand px-6 text-base font-semibold text-surface transition-colors hover:bg-brand-700 disabled:opacity-70"
             >
-              {pending ? "Đang gửi…" : p.submitLabel}
+              {busy ? "Đang gửi…" : p.submitLabel}
             </button>
             {p.privacyNote && <div className={`text-sm ${dark ? "text-surface/80" : "text-muted"}`}>{p.privacyNote}</div>}
           </div>
