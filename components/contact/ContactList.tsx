@@ -8,9 +8,13 @@ export function ContactList({ settings }: { settings: SiteSettings }) {
   const street = addressLine(address);
   const row = "flex gap-3";
   const icon = "mt-1 shrink-0 text-brand-ink";
+  // Dòng chỉ có link: canh giữa icon theo vùng chạm 44 px ở mobile (MB-05).
+  const linkRow = "flex items-center gap-3 md:items-start";
+  const linkIcon = "shrink-0 text-brand-ink md:mt-1";
+  const tap = "inline-flex items-center max-md:min-h-11";
 
   return (
-    <ul className="space-y-3 text-sm">
+    <ul className="space-y-1 text-sm md:space-y-3">
       {street && (
         <li className={row}>
           <PinIcon className={icon} />
@@ -28,13 +32,13 @@ export function ContactList({ settings }: { settings: SiteSettings }) {
         </li>
       )}
       {phones.length > 0 && (
-        <li className={row}>
-          <PhoneIcon className={icon} />
+        <li className={linkRow}>
+          <PhoneIcon className={linkIcon} />
           <span className="flex flex-wrap gap-x-2">
             {phones.map((p, i) => (
-              <span key={p.number}>
-                {i > 0 && <span aria-hidden="true">· </span>}
-                <a href={telHref(p.e164 ?? p.number)} className="font-semibold text-ink hover:text-brand-ink">
+              <span key={p.number} className="inline-flex items-center gap-x-1">
+                {i > 0 && <span aria-hidden="true">·</span>}
+                <a href={telHref(p.e164 ?? p.number)} className={`${tap} font-semibold text-ink hover:text-brand-ink`}>
                   {p.label ? `${p.label}: ` : ""}
                   {p.number}
                 </a>
@@ -44,17 +48,17 @@ export function ContactList({ settings }: { settings: SiteSettings }) {
         </li>
       )}
       {zalo && (
-        <li className={row}>
-          <ChatIcon className={icon} />
-          <a href={zalo.url} target="_blank" rel="noopener" className="font-semibold text-ink hover:text-brand-ink">
+        <li className={linkRow}>
+          <ChatIcon className={linkIcon} />
+          <a href={zalo.url} target="_blank" rel="noopener" className={`${tap} font-semibold text-ink hover:text-brand-ink`}>
             {zalo.label}
           </a>
         </li>
       )}
       {email && (
-        <li className={row}>
-          <MailIcon className={icon} />
-          <a href={`mailto:${email}`} className="text-ink hover:text-brand-ink">
+        <li className={linkRow}>
+          <MailIcon className={linkIcon} />
+          <a href={`mailto:${email}`} className={`${tap} text-ink hover:text-brand-ink`}>
             {email}
           </a>
         </li>

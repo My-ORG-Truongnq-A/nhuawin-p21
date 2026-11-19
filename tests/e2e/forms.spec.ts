@@ -81,3 +81,37 @@ test("không phải production → 0 thẻ script đo lường (TR-01)", async (
   await page.goto("/");
   await expect(page.locator('script[src*="googletagmanager.com"], #tracking-queue')).toHaveCount(0);
 });
+
+test.describe("dry-run + nhấp đúp (LD-01)", () => {
+  for (const [kind, path] of [
+    ["quote", "/bao-gia"],
+    ["partnership", "/hop-tac"],
+    ["contact", "/lien-he"],
+  ] as const) {
+    test(`${kind} ở ${path}: nhấp đúp → 1 request, thành công kèm dòng "Bản demo"`, async ({ page }) => {
+      await page.goto(path);
+      const form = page.locator(`form:has(input[name="$kind"][value="${kind}"])`);
+      await form.locator('input[name="name"]').fill("Khách thử e2e");
+      await form.locator('input[name="phone"]').fill("0900 000 001");
+      const province = form.locator('input[name="province"]');
+      if (await province.count()) await province.fill("Huế");
+      for (const sel of await form.locator("select").all()) await sel.selectOption({ index: 1 });
+      const radio = form.locator('input[type="radio"]').first();
+      if ((await radio.count()) && !(await form.locator('input[type="radio"]:checked').count())) await radio.check();
+
+      const posts: string[] = [];
+      page.on("request", (r) => {
+        if (r.method() === "POST" && r.headers()["next-action"]) posts.push(r.url());
+      });
+      await page.waitForTimeout(2100);
+      await form.getByRole("button", { name: /\S/ }).last().dblclick();
+
+      const status = page.getByRole("status").filter({ hasText: /\S/ });
+      await expect(status).toBeVisible();
+      await expect(status).toContainText("Bản demo — thông tin chưa được gửi tới doanh nghiệp");
+      await page.waitForTimeout(500);
+      expect(posts).toHaveLength(1);
+      await expect.poll(() => leadEvents(page)).toHaveLength(1);
+    });
+  }
+});

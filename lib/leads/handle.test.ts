@@ -94,6 +94,27 @@ describe("handleLead (LD-01, LD-04)", () => {
     expect(c.fetch).toHaveBeenCalledTimes(1);
   });
 
+  it("dry-run → thành công kèm demo: true, không gọi CRM; tắt dry-run → không có demo", async () => {
+    const c = ctx({ env: { LEADS_DRY_RUN: "1" } });
+    vi.spyOn(console, "info").mockImplementation(() => {});
+    const r = await handleLead(fd({ ...VALID, $rid: RID }), c);
+    expect(r).toEqual({ status: "success", message: "OK", requestId: RID, formType: "contact", demo: true });
+    expect(c.fetch).not.toHaveBeenCalled();
+    // Gửi lại cùng requestId ở dry-run → vẫn báo demo.
+    expect((await handleLead(fd({ ...VALID, $rid: RID }), c)).demo).toBe(true);
+    expect((await handleLead(fd({ ...VALID, $rid: RID }), ctx())).demo).toBeUndefined();
+  });
+
+  it("2 request cùng requestId gửi đồng thời (nhấp đúp) → giao 1 lần, cả 2 thành công", async () => {
+    for (const store of [memoryStore(), null]) {
+      const c = ctx({ store });
+      const [a, b] = await Promise.all([handleLead(fd({ ...VALID, $rid: RID }), c), handleLead(fd({ ...VALID, $rid: RID }), c)]);
+      expect(a.status).toBe("success");
+      expect(b).toEqual(a);
+      expect(c.fetch).toHaveBeenCalledTimes(1);
+    }
+  });
+
   it.each([
     ["CRM 500", { fetch: vi.fn<typeof fetch>(async () => new Response(null, { status: 500 })) }],
     ["chưa cấu hình đích", { env: {} }],
